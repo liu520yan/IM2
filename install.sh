@@ -3,12 +3,14 @@
 PARENT_DIR=`dirname $0 | pwd`
 echo "PARENT_DIR" PARENT_DIR
 
-USER_OAUTH_PATH=$PARENT_DIR/IM-USER/user-oauth
-USER_CLIENT_PATH=$PARENT_DIR/IM-USER/user-client
+USER_OAUTH_PATH=$PARENT_DIR/im-oauth2
+USER_CLIENT_PATH=$PARENT_DIR/im-users
+USER_NETTY_PATH=$PARENT_DIR/im-netty
 
 VERSION="1.0-SNAPSHOT"
-USER_OAUTH_IMAGE="yan520liu/user-oauth:$VERSION"
-USER_CLIENT_IMAGE="yan520liu/user-oauth:$VERSION"
+USER_OAUTH_IMAGE="yan520liu/im-oauth2:$VERSION"
+USER_CLIENT_IMAGE="yan520liu/im-users:$VERSION"
+USER_NETTY_IMAGE="yan520liu/im-netty:$VERSION"
 
 function installImage(){
 
@@ -38,6 +40,11 @@ function installCLIENT(){
     installImage $USER_CLIENT_IMAGE
 }
 
+function installNETTY(){
+    cd $USER_CLIENT_PATH
+    installImage $USER_NETTY_IMAGE
+}
+
 function package(){
     mvn -DskipTests clean package
 }
@@ -50,6 +57,10 @@ case $1 in
     package
     installOAUTH
     ;;
+     netty)
+      package
+      installNETTY
+      ;;
    config)
       package
       installCLIENT
@@ -58,6 +69,7 @@ case $1 in
    package
    installOAUTH
    installCLIENT
+   installNETTY
 esac
 
 
