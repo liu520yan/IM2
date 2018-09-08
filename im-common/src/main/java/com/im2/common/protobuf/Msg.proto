@@ -1,0 +1,119 @@
+syntax = "proto3";
+// 生成的包名
+option java_package = "com.im2.common.protobuf";
+//生成的java名
+option java_outer_classname = "MessageTemplate";
+
+message Message {
+    string userSign = 14;
+    // 消息标志
+    MessageSign sign = 1;
+    // 消息类型
+    ActionType type = 2;
+    // 消息类型
+    Status status = 3;
+    //token
+    string token = 5;
+
+    oneof body {
+        Account login = 6;
+        Member member = 7;
+        Group group = 8;
+        Info info = 9;
+        MyFriend myFriend = 10;
+        Friend friend = 11;
+        PreInfo preInfo = 12;
+        Account account = 13;
+    }
+}
+//我的讨论组
+message MyGroup {
+    string username = 1;
+    map<string, list> groups = 2;
+}
+message list {
+    repeated string group = 1;
+}
+//成员
+message Member {
+    string username = 1;
+    string groupName = 2;
+    string membe = 3;
+}
+
+//讨论组
+message Group {
+    string username = 1;
+    string groupName = 2;
+}
+
+//个人信息
+message Info {
+    string username = 1;
+    string password = 2;
+    string name = 3;
+    string sex = 4;
+    string age = 5;
+    string phone = 6;
+    string address = 7;
+    string introduction = 8;
+}
+//我的好友
+message MyFriend {
+    string username = 1;
+    map<string, bool> friends = 2; // 名称 ,是否在线
+}
+
+// 好友
+message Friend {
+    string username = 1;
+    string friend = 2;
+}
+//个人消息
+message PreInfo {
+    string sender = 1;
+    string receiver = 2;
+    string content = 3;
+    int64 time = 4;
+}
+
+//帐号
+message Account {
+    string username = 1;
+    string password = 2;
+    int64 token = 3;
+}
+
+
+enum MessageSign //枚举消息类型
+{
+    REQUEST = 0;
+    RESPONSE = 1;
+    NOTICE = 2;
+}
+enum ActionType {
+    LOGIN = 0; // 登录
+    REGISTER = 1; // 注册
+    LOGOUT = 2; // 登出
+    RECONN = 3; // 重连
+    PERSON_MESSAGE = 4; // 发送个人消息
+    GROUP_MESSAGE = 5; // 发送讨论组消息
+    CREATE_GROUP = 6; // 创建讨论组
+    DISBAND_GROUP = 7; // 解散讨论组
+    ADD_MEMBER = 8; // 讨论组添加成员
+    REMOVE_MEMBER = 9; // 讨论组移除成员
+    ADD_FRIEND = 10; // 添加好友
+    REMOVE_FRIEND = 11; // 删除好友
+    ALL_FRIEND = 12; // 查看已添加好友
+    UPDATE_SELF_INFO = 13; // 修改个人信息
+    LOOK_SELF_INFO = 14; // 查看个人信息
+    LOOK_FRIEND_INFO = 15; // 查看好友信息
+    LOOK_GROUP_INFO = 16; // 查看自己所在讨论组信息
+    HEARTBEAT = 17; // 心跳
+}
+enum Status {
+    SUCCESS = 0; //请求成功
+    REQUEST_ERROR = 1; //请求错误
+    SERVER_BUSY = 2; // 服务器繁忙
+    SERVER_ERROR = 3; // 服务器错误
+}
