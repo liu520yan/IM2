@@ -18,6 +18,7 @@
         <docker.image.prefix>yan520liu</docker.image.prefix>
         <netty.version>4.1.22.Final</netty.version>
         <protobuf.version>3.5.1</protobuf.version>
+        <dockerHost>http://47.106.116.106:2375</dockerHost>
     </properties>
     <modules>
         <module>im-oauth2</module>
