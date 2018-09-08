@@ -8,9 +8,9 @@ USER_CLIENT_PATH=$PARENT_DIR/im-users
 USER_NETTY_PATH=$PARENT_DIR/im-netty
 
 VERSION="1.0-SNAPSHOT"
-USER_OAUTH_IMAGE="yan520liu/im-oauth2:$VERSION"
-USER_CLIENT_IMAGE="yan520liu/im-users:$VERSION"
-USER_NETTY_IMAGE="yan520liu/im-netty:$VERSION"
+OAUTH_IMAGE="yan520liu/im-oauth2:$VERSION"
+CLIENT_IMAGE="yan520liu/im-users:$VERSION"
+NETTY_IMAGE="yan520liu/im-netty:$VERSION"
 
 function installImage(){
 
@@ -32,17 +32,17 @@ function installImage(){
 
 function installOAUTH(){
     cd $USER_OAUTH_PATH
-    installImage $USER_OAUTH_IMAGE
+    installImage $OAUTH_IMAGE
 }
 
 function installCLIENT(){
     cd $USER_CLIENT_PATH
-    installImage $USER_CLIENT_IMAGE
+    installImage $CLIENT_IMAGE
 }
 
 function installNETTY(){
-    cd $USER_CLIENT_PATH
-    installImage $USER_NETTY_IMAGE
+    cd $USER_NETTY_PATH
+    installImage $NETTY_IMAGE
 }
 
 function package(){
@@ -53,7 +53,7 @@ case $1 in
     package)
     package
     ;;
-    server)
+    oauth)
     package
     installOAUTH
     ;;
@@ -61,7 +61,7 @@ case $1 in
       package
       installNETTY
       ;;
-   config)
+   client)
       package
       installCLIENT
       ;;
