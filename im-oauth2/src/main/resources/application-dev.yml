@@ -1,0 +1,14 @@
+server:
+  port: 9999
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.106.116.106:1001/eureka/
+spring:
+  application:
+    name: oauth2
+  datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://47.106.116.106:3306/im-oauth2?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+   username: root
+   password: 123456
