@@ -62,16 +62,14 @@ public class UserController extends BaseController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    ResponseEntity findUser(@RequestParam("username") String username,
+    UserEntity findUser(@RequestParam("username") String username,
                         @RequestParam("password") String password) {
-         userDao.findUserByNameAndPsd(username, password);
-        return SUCCESS;
+        return userDao.findUserByNameAndPsd(username, password);
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/username")
-    ResponseEntity findUserByName(@RequestParam("username") String username) {
-         userDao.findUserByName(username);
-        return SUCCESS;
+    UserEntity findUserByName(@RequestParam("username") String username) {
+        return userDao.findUserByName(username);
     }
 
     public Boolean verifyCodeCheck(String phone, String verifyCode) {
