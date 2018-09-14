@@ -4,6 +4,7 @@ import com.im2.common.baseBean.BaseController;
 import com.im2.common.entity.UserEntity;
 import com.im2.common.error.ResponseType;
 import com.im2.common.exception.BaseException;
+import com.im2.common.time.Timer;
 import com.im2.common.util.AccountValidatorUtil;
 import com.im2.users.dao.UserDao;
 import com.im2.users.vo.UserVo;
@@ -15,6 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.util.StopWatch;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -27,6 +29,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping(value = "/user")
 public class UserController extends BaseController {
+
+    private StopWatch stopWatch = new StopWatch();
 
     @Autowired
     private UserDao userDao;
@@ -48,10 +52,9 @@ public class UserController extends BaseController {
         if (!AccountValidatorUtil.isMobile(user.getPhone())) {
             throw new BaseException("电话号码有误", ResponseType.PARAM_ERRER);
         }
-        //todo
-//        if (!verifyCodeCheck(user.getPhone(), user.getVerifyCode())) {
-//            throw new BaseException("验证码错误", ResponseType.PARAM_ERRER);
-//        }
+        if (!verifyCodeCheck(user.getPhone(), user.getVerifyCode())) {
+            throw new BaseException("验证码错误", ResponseType.PARAM_ERRER);
+        }
         UserEntity userEntity = userDao.findUserPhone(user.getPhone());
         if (userEntity != null && userEntity.getId() != null) {
             throw new BaseException("用户已存在", ResponseType.PARAM_ERRER);
@@ -73,6 +76,7 @@ public class UserController extends BaseController {
     }
 
     public Boolean verifyCodeCheck(String phone, String verifyCode) {
+        stopWatch.start("开始发送验证码请求");
         String url = "https://webapi.sms.mob.com/sms/verify";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -83,6 +87,8 @@ public class UserController extends BaseController {
         params.add("code", verifyCode);
         HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<>(params, headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
+        stopWatch.stop();
+        log.info("发送验证码校验请求耗时：{}ms，response：{}", stopWatch.getTotalTimeMillis(), response.getBody());
         return HttpStatus.OK.equals(response.getStatusCode());
     }
 
