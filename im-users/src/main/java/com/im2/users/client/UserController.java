@@ -21,6 +21,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by liuyan on 2018/8/23.
  */
@@ -88,8 +91,10 @@ public class UserController extends BaseController {
         HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<>(params, headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
         stopWatch.stop();
-        log.info("发送验证码校验请求耗时：{}ms，response：{}", stopWatch.getTotalTimeMillis(), response.getBody());
-        return HttpStatus.OK.equals(response.getStatusCode());
+        log.info("发送验证码校验请求耗时：{}s，response：{}", stopWatch.getTotalTimeSeconds(), response.getBody());
+        Map<String, String> map = new HashMap<>();
+        String status = map.get("status");
+        return "200".equals(status);
     }
 
 }

@@ -8,6 +8,9 @@ spring:
    password: 123456
 server:
   port: 9010
+mob:
+  service:
+    appkey: 2789337855483
 eureka:
   client:
     serviceUrl:
