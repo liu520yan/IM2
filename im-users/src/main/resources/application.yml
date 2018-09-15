@@ -10,6 +10,7 @@ server:
   port: 9010
 mob:
   service:
+    url: https://webapi.sms.mob.com/sms/verify
     appkey: 2789337855483
 eureka:
   client:

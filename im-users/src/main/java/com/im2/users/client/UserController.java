@@ -39,6 +39,8 @@ public class UserController extends BaseController {
     private UserDao userDao;
     @Value("${mob.service.appkey}")
     private String appkey;
+    @Value("${mob.service.url}")
+    private String url;
 
     @Autowired
     private RestTemplate restTemplate;
@@ -80,7 +82,6 @@ public class UserController extends BaseController {
 
     public Boolean verifyCodeCheck(String phone, String verifyCode) {
         stopWatch.start("开始发送验证码请求");
-        String url = "https://webapi.sms.mob.com/sms/verify";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
