@@ -14,10 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.StopWatch;
-import org.springframework.util.StringUtils;
+import org.springframework.util.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -57,15 +54,22 @@ public class UserController extends BaseController {
         if (!AccountValidatorUtil.isMobile(user.getPhone())) {
             throw new BaseException("电话号码有误", ResponseType.PARAM_ERRER);
         }
-        if (!verifyCodeCheck(user.getPhone(), user.getVerifyCode())) {
-            throw new BaseException("验证码错误", ResponseType.PARAM_ERRER);
-        }
+//        if (!verifyCodeCheck(user.getPhone(), user.getVerifyCode())) {
+//            throw new BaseException("验证码错误", ResponseType.PARAM_ERRER);
+//        }
         UserEntity userEntity = userDao.findUserPhone(user.getPhone());
         if (userEntity != null && userEntity.getId() != null) {
             throw new BaseException("用户已存在", ResponseType.PARAM_ERRER);
         }
         userDao.insertByUser(user);
         log.info("用户注册成功,电话：{}", user.getPhone());
+        return SUCCESS;
+    }
+
+    @ApiOperation(value = "注销账户")
+    @RequestMapping(value = "/{phone}", method = RequestMethod.DELETE)
+    ResponseEntity cancellation(@PathVariable(value = "phone") String phone) {
+        userDao.deleteByPhone(phone);
         return SUCCESS;
     }
 
