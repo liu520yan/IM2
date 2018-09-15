@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * key-->channel映射配置类
  * Created by liuyan on 2018/9/8.
  */
 @Configuration

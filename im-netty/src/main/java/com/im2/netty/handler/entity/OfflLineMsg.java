@@ -4,6 +4,7 @@ import com.im2.common.constants.AcceptType;
 import lombok.Data;
 
 /**
+ * 离线消息实体类
  * Created by liuyan on 2018/9/14.
  */
 @Data
