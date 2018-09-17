@@ -4,19 +4,25 @@ import com.im2.common.feignClient.Oauth2Feign;
 import com.im2.common.protobuf.MessageTemplate;
 import com.im2.common.protobuf.MessageTemplateWrapper;
 import com.im2.netty.handler.LoginHandler;
+import com.im2.netty.handler.entity.OfflLineMsgEntity;
+import com.im2.netty.handler.mapper.OfflineMsgMapper;
 import com.im2.netty.handler.storage.ChannelStrorage;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.PostConstruct;
 import java.util.Base64;
+import java.util.List;
 import java.util.Map;
 
 import static com.im2.common.protobuf.MessageTemplate.ActionType.LOGIN;
+import static com.im2.common.protobuf.MessageTemplate.ActionType.PERSON_MESSAGE;
 import static com.im2.common.protobuf.MessageTemplate.MessageSign.RESPONSE;
 import static com.im2.common.protobuf.MessageTemplate.Status.REQUEST_ERROR;
 import static com.im2.common.protobuf.MessageTemplate.Status.SUCCESS;
@@ -30,6 +36,8 @@ public class LoginHandlerImpl implements LoginHandler {
 
     private static String base64Credentials;
 
+    @Autowired
+    private OfflineMsgMapper offlineMsgMapper;
     @Autowired
     private Oauth2Feign oauth2Feign;
     @Autowired
@@ -87,8 +95,31 @@ public class LoginHandlerImpl implements LoginHandler {
                 (ChannelFutureListener) channelFuture -> {
                     if (future.isSuccess()) {
                         log.info("用戶：{} 登录成功", wrapper.getMessage().getAccount().getUsername());
-                        channelStrorage.setKeyAndChannel(wrapper.getMessage().getUserSign(), wrapper.getChannel());
-                        //todo 发送离线信息
+                        channelStrorage.setKeyAndChannel(wrapper.getMessage().getAccount().getPhone(), wrapper.getChannel());
+                        //发送个人离线信息
+                        List<OfflLineMsgEntity> offlineMsgs = offlineMsgMapper.findEntityByAccept(wrapper.getMessage().getAccount().getPhone());
+                        if (!CollectionUtils.isEmpty(offlineMsgs)) {
+                            for (OfflLineMsgEntity entity : offlineMsgs) {
+                                Channel channel = channelStrorage.getChannelByKey(entity.getAccept());
+                                MessageTemplate.PreInfo preInfo = MessageTemplate.PreInfo.newBuilder()
+                                        .setTime(entity.getTime())
+                                        .setSender(entity.getSender())
+                                        .setReceiver(entity.getAccept())
+                                        .setContent(entity.getContent())
+                                        .build();
+                                MessageTemplate.Message msg = MessageTemplate.Message.newBuilder()
+                                        .setSign(RESPONSE)
+                                        .setType(PERSON_MESSAGE)
+                                        .setPreInfo(preInfo)
+                                        .setStatus(SUCCESS)
+                                        .build();
+                                channel.writeAndFlush(msg);
+                                log.info("用户：{} 离线消息发送成功", wrapper.getMessage().getAccount().getPhone());
+                            }
+
+                        }
+
+                        //todo 发送群组离线信息
                     } else {
                         log.warn("用戶：{} 登录失败", wrapper.getMessage().getAccount().getUsername());
                     }

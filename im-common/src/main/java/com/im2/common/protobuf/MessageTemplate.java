@@ -50,7 +50,7 @@ public final class MessageTemplate {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -59,7 +59,7 @@ public final class MessageTemplate {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static MessageSign valueOf(int value) {
       return forNumber(value);
     }
@@ -95,7 +95,7 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return MessageTemplate.getDescriptor().getEnumTypes().get(0);
+      return com.im2.common.protobuf.MessageTemplate.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final MessageSign[] VALUES = values();
@@ -103,7 +103,7 @@ public final class MessageTemplate {
     public static MessageSign valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -421,7 +421,7 @@ public final class MessageTemplate {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -430,7 +430,7 @@ public final class MessageTemplate {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static ActionType valueOf(int value) {
       return forNumber(value);
     }
@@ -481,7 +481,7 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return MessageTemplate.getDescriptor().getEnumTypes().get(1);
+      return com.im2.common.protobuf.MessageTemplate.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final ActionType[] VALUES = values();
@@ -489,7 +489,7 @@ public final class MessageTemplate {
     public static ActionType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -583,7 +583,7 @@ public final class MessageTemplate {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -592,7 +592,7 @@ public final class MessageTemplate {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @Deprecated
+    @java.lang.Deprecated
     public static Status valueOf(int value) {
       return forNumber(value);
     }
@@ -629,7 +629,7 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return MessageTemplate.getDescriptor().getEnumTypes().get(2);
+      return com.im2.common.protobuf.MessageTemplate.getDescriptor().getEnumTypes().get(2);
     }
 
     private static final Status[] VALUES = values();
@@ -637,7 +637,7 @@ public final class MessageTemplate {
     public static Status valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -662,7 +662,7 @@ public final class MessageTemplate {
     /**
      * <code>string userSign = 14;</code>
      */
-    String getUserSign();
+    java.lang.String getUserSign();
     /**
      * <code>string userSign = 14;</code>
      */
@@ -684,7 +684,7 @@ public final class MessageTemplate {
      *
      * <code>.MessageSign sign = 1;</code>
      */
-    MessageSign getSign();
+    com.im2.common.protobuf.MessageTemplate.MessageSign getSign();
 
     /**
      * <pre>
@@ -701,7 +701,7 @@ public final class MessageTemplate {
      *
      * <code>.ActionType type = 2;</code>
      */
-    ActionType getType();
+    com.im2.common.protobuf.MessageTemplate.ActionType getType();
 
     /**
      * <pre>
@@ -718,7 +718,7 @@ public final class MessageTemplate {
      *
      * <code>.Status status = 3;</code>
      */
-    Status getStatus();
+    com.im2.common.protobuf.MessageTemplate.Status getStatus();
 
     /**
      * <pre>
@@ -727,7 +727,7 @@ public final class MessageTemplate {
      *
      * <code>string token = 5;</code>
      */
-    String getToken();
+    java.lang.String getToken();
     /**
      * <pre>
      *token
@@ -745,11 +745,11 @@ public final class MessageTemplate {
     /**
      * <code>.Account login = 6;</code>
      */
-    Account getLogin();
+    com.im2.common.protobuf.MessageTemplate.Account getLogin();
     /**
      * <code>.Account login = 6;</code>
      */
-    AccountOrBuilder getLoginOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getLoginOrBuilder();
 
     /**
      * <code>.Member member = 7;</code>
@@ -758,11 +758,11 @@ public final class MessageTemplate {
     /**
      * <code>.Member member = 7;</code>
      */
-    Member getMember();
+    com.im2.common.protobuf.MessageTemplate.Member getMember();
     /**
      * <code>.Member member = 7;</code>
      */
-    MemberOrBuilder getMemberOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.MemberOrBuilder getMemberOrBuilder();
 
     /**
      * <code>.Group group = 8;</code>
@@ -771,11 +771,11 @@ public final class MessageTemplate {
     /**
      * <code>.Group group = 8;</code>
      */
-    Group getGroup();
+    com.im2.common.protobuf.MessageTemplate.Group getGroup();
     /**
      * <code>.Group group = 8;</code>
      */
-    GroupOrBuilder getGroupOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.GroupOrBuilder getGroupOrBuilder();
 
     /**
      * <code>.Info info = 9;</code>
@@ -784,11 +784,11 @@ public final class MessageTemplate {
     /**
      * <code>.Info info = 9;</code>
      */
-    Info getInfo();
+    com.im2.common.protobuf.MessageTemplate.Info getInfo();
     /**
      * <code>.Info info = 9;</code>
      */
-    InfoOrBuilder getInfoOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.InfoOrBuilder getInfoOrBuilder();
 
     /**
      * <code>.MyFriend myFriend = 10;</code>
@@ -797,11 +797,11 @@ public final class MessageTemplate {
     /**
      * <code>.MyFriend myFriend = 10;</code>
      */
-    MyFriend getMyFriend();
+    com.im2.common.protobuf.MessageTemplate.MyFriend getMyFriend();
     /**
      * <code>.MyFriend myFriend = 10;</code>
      */
-    MyFriendOrBuilder getMyFriendOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder getMyFriendOrBuilder();
 
     /**
      * <code>.Friend friend = 11;</code>
@@ -810,11 +810,11 @@ public final class MessageTemplate {
     /**
      * <code>.Friend friend = 11;</code>
      */
-    Friend getFriend();
+    com.im2.common.protobuf.MessageTemplate.Friend getFriend();
     /**
      * <code>.Friend friend = 11;</code>
      */
-    FriendOrBuilder getFriendOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.FriendOrBuilder getFriendOrBuilder();
 
     /**
      * <code>.PreInfo preInfo = 12;</code>
@@ -823,11 +823,11 @@ public final class MessageTemplate {
     /**
      * <code>.PreInfo preInfo = 12;</code>
      */
-    PreInfo getPreInfo();
+    com.im2.common.protobuf.MessageTemplate.PreInfo getPreInfo();
     /**
      * <code>.PreInfo preInfo = 12;</code>
      */
-    PreInfoOrBuilder getPreInfoOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder getPreInfoOrBuilder();
 
     /**
      * <code>.Account account = 13;</code>
@@ -836,13 +836,13 @@ public final class MessageTemplate {
     /**
      * <code>.Account account = 13;</code>
      */
-    Account getAccount();
+    com.im2.common.protobuf.MessageTemplate.Account getAccount();
     /**
      * <code>.Account account = 13;</code>
      */
-    AccountOrBuilder getAccountOrBuilder();
+    com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getAccountOrBuilder();
 
-    public Message.BodyCase getBodyCase();
+    public com.im2.common.protobuf.MessageTemplate.Message.BodyCase getBodyCase();
   }
   /**
    * Protobuf type {@code Message}
@@ -864,7 +864,7 @@ public final class MessageTemplate {
       token_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -875,7 +875,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -907,125 +907,125 @@ public final class MessageTemplate {
               break;
             }
             case 42: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               token_ = s;
               break;
             }
             case 50: {
-              Account.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Account.Builder subBuilder = null;
               if (bodyCase_ == 6) {
-                subBuilder = ((Account) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Account) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Account.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Account.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Account) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Account) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 6;
               break;
             }
             case 58: {
-              Member.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Member.Builder subBuilder = null;
               if (bodyCase_ == 7) {
-                subBuilder = ((Member) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Member) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Member.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Member.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Member) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Member) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 7;
               break;
             }
             case 66: {
-              Group.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Group.Builder subBuilder = null;
               if (bodyCase_ == 8) {
-                subBuilder = ((Group) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Group) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Group.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Group.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Group) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Group) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 8;
               break;
             }
             case 74: {
-              Info.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Info.Builder subBuilder = null;
               if (bodyCase_ == 9) {
-                subBuilder = ((Info) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Info) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Info.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Info.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Info) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Info) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 9;
               break;
             }
             case 82: {
-              MyFriend.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.MyFriend.Builder subBuilder = null;
               if (bodyCase_ == 10) {
-                subBuilder = ((MyFriend) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.MyFriend) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(MyFriend.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.MyFriend.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((MyFriend) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.MyFriend) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 10;
               break;
             }
             case 90: {
-              Friend.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Friend.Builder subBuilder = null;
               if (bodyCase_ == 11) {
-                subBuilder = ((Friend) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Friend) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Friend.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Friend.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Friend) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Friend) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 11;
               break;
             }
             case 98: {
-              PreInfo.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.PreInfo.Builder subBuilder = null;
               if (bodyCase_ == 12) {
-                subBuilder = ((PreInfo) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.PreInfo) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(PreInfo.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.PreInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((PreInfo) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.PreInfo) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 12;
               break;
             }
             case 106: {
-              Account.Builder subBuilder = null;
+              com.im2.common.protobuf.MessageTemplate.Account.Builder subBuilder = null;
               if (bodyCase_ == 13) {
-                subBuilder = ((Account) body_).toBuilder();
+                subBuilder = ((com.im2.common.protobuf.MessageTemplate.Account) body_).toBuilder();
               }
               body_ =
-                  input.readMessage(Account.parser(), extensionRegistry);
+                  input.readMessage(com.im2.common.protobuf.MessageTemplate.Account.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((Account) body_);
+                subBuilder.mergeFrom((com.im2.common.protobuf.MessageTemplate.Account) body_);
                 body_ = subBuilder.buildPartial();
               }
               bodyCase_ = 13;
               break;
             }
             case 114: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               userSign_ = s;
               break;
@@ -1051,19 +1051,19 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Message_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Message_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Message_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Message.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Message.class, com.im2.common.protobuf.MessageTemplate.Message.Builder.class);
     }
 
     private int bodyCase_ = 0;
-    private Object body_;
+    private java.lang.Object body_;
     public enum BodyCase
         implements com.google.protobuf.Internal.EnumLite {
       LOGIN(6),
@@ -1082,7 +1082,7 @@ public final class MessageTemplate {
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @Deprecated
+      @java.lang.Deprecated
       public static BodyCase valueOf(int value) {
         return forNumber(value);
       }
@@ -1113,18 +1113,18 @@ public final class MessageTemplate {
     }
 
     public static final int USERSIGN_FIELD_NUMBER = 14;
-    private volatile Object userSign_;
+    private volatile java.lang.Object userSign_;
     /**
      * <code>string userSign = 14;</code>
      */
-    public String getUserSign() {
-      Object ref = userSign_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUserSign() {
+      java.lang.Object ref = userSign_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         userSign_ = s;
         return s;
       }
@@ -1134,11 +1134,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUserSignBytes() {
-      Object ref = userSign_;
-      if (ref instanceof String) {
+      java.lang.Object ref = userSign_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         userSign_ = b;
         return b;
       } else {
@@ -1165,10 +1165,10 @@ public final class MessageTemplate {
      *
      * <code>.MessageSign sign = 1;</code>
      */
-    public MessageSign getSign() {
+    public com.im2.common.protobuf.MessageTemplate.MessageSign getSign() {
       @SuppressWarnings("deprecation")
-      MessageSign result = MessageSign.valueOf(sign_);
-      return result == null ? MessageSign.UNRECOGNIZED : result;
+      com.im2.common.protobuf.MessageTemplate.MessageSign result = com.im2.common.protobuf.MessageTemplate.MessageSign.valueOf(sign_);
+      return result == null ? com.im2.common.protobuf.MessageTemplate.MessageSign.UNRECOGNIZED : result;
     }
 
     public static final int TYPE_FIELD_NUMBER = 2;
@@ -1190,10 +1190,10 @@ public final class MessageTemplate {
      *
      * <code>.ActionType type = 2;</code>
      */
-    public ActionType getType() {
+    public com.im2.common.protobuf.MessageTemplate.ActionType getType() {
       @SuppressWarnings("deprecation")
-      ActionType result = ActionType.valueOf(type_);
-      return result == null ? ActionType.UNRECOGNIZED : result;
+      com.im2.common.protobuf.MessageTemplate.ActionType result = com.im2.common.protobuf.MessageTemplate.ActionType.valueOf(type_);
+      return result == null ? com.im2.common.protobuf.MessageTemplate.ActionType.UNRECOGNIZED : result;
     }
 
     public static final int STATUS_FIELD_NUMBER = 3;
@@ -1215,14 +1215,14 @@ public final class MessageTemplate {
      *
      * <code>.Status status = 3;</code>
      */
-    public Status getStatus() {
+    public com.im2.common.protobuf.MessageTemplate.Status getStatus() {
       @SuppressWarnings("deprecation")
-      Status result = Status.valueOf(status_);
-      return result == null ? Status.UNRECOGNIZED : result;
+      com.im2.common.protobuf.MessageTemplate.Status result = com.im2.common.protobuf.MessageTemplate.Status.valueOf(status_);
+      return result == null ? com.im2.common.protobuf.MessageTemplate.Status.UNRECOGNIZED : result;
     }
 
     public static final int TOKEN_FIELD_NUMBER = 5;
-    private volatile Object token_;
+    private volatile java.lang.Object token_;
     /**
      * <pre>
      *token
@@ -1230,14 +1230,14 @@ public final class MessageTemplate {
      *
      * <code>string token = 5;</code>
      */
-    public String getToken() {
-      Object ref = token_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getToken() {
+      java.lang.Object ref = token_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         token_ = s;
         return s;
       }
@@ -1251,11 +1251,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getTokenBytes() {
-      Object ref = token_;
-      if (ref instanceof String) {
+      java.lang.Object ref = token_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         token_ = b;
         return b;
       } else {
@@ -1273,20 +1273,20 @@ public final class MessageTemplate {
     /**
      * <code>.Account login = 6;</code>
      */
-    public Account getLogin() {
+    public com.im2.common.protobuf.MessageTemplate.Account getLogin() {
       if (bodyCase_ == 6) {
-         return (Account) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Account) body_;
       }
-      return Account.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
     }
     /**
      * <code>.Account login = 6;</code>
      */
-    public AccountOrBuilder getLoginOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getLoginOrBuilder() {
       if (bodyCase_ == 6) {
-         return (Account) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Account) body_;
       }
-      return Account.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
     }
 
     public static final int MEMBER_FIELD_NUMBER = 7;
@@ -1299,20 +1299,20 @@ public final class MessageTemplate {
     /**
      * <code>.Member member = 7;</code>
      */
-    public Member getMember() {
+    public com.im2.common.protobuf.MessageTemplate.Member getMember() {
       if (bodyCase_ == 7) {
-         return (Member) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Member) body_;
       }
-      return Member.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
     }
     /**
      * <code>.Member member = 7;</code>
      */
-    public MemberOrBuilder getMemberOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.MemberOrBuilder getMemberOrBuilder() {
       if (bodyCase_ == 7) {
-         return (Member) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Member) body_;
       }
-      return Member.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
     }
 
     public static final int GROUP_FIELD_NUMBER = 8;
@@ -1325,20 +1325,20 @@ public final class MessageTemplate {
     /**
      * <code>.Group group = 8;</code>
      */
-    public Group getGroup() {
+    public com.im2.common.protobuf.MessageTemplate.Group getGroup() {
       if (bodyCase_ == 8) {
-         return (Group) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Group) body_;
       }
-      return Group.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
     }
     /**
      * <code>.Group group = 8;</code>
      */
-    public GroupOrBuilder getGroupOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.GroupOrBuilder getGroupOrBuilder() {
       if (bodyCase_ == 8) {
-         return (Group) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Group) body_;
       }
-      return Group.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
     }
 
     public static final int INFO_FIELD_NUMBER = 9;
@@ -1351,20 +1351,20 @@ public final class MessageTemplate {
     /**
      * <code>.Info info = 9;</code>
      */
-    public Info getInfo() {
+    public com.im2.common.protobuf.MessageTemplate.Info getInfo() {
       if (bodyCase_ == 9) {
-         return (Info) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Info) body_;
       }
-      return Info.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
     }
     /**
      * <code>.Info info = 9;</code>
      */
-    public InfoOrBuilder getInfoOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.InfoOrBuilder getInfoOrBuilder() {
       if (bodyCase_ == 9) {
-         return (Info) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Info) body_;
       }
-      return Info.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
     }
 
     public static final int MYFRIEND_FIELD_NUMBER = 10;
@@ -1377,20 +1377,20 @@ public final class MessageTemplate {
     /**
      * <code>.MyFriend myFriend = 10;</code>
      */
-    public MyFriend getMyFriend() {
+    public com.im2.common.protobuf.MessageTemplate.MyFriend getMyFriend() {
       if (bodyCase_ == 10) {
-         return (MyFriend) body_;
+         return (com.im2.common.protobuf.MessageTemplate.MyFriend) body_;
       }
-      return MyFriend.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
     }
     /**
      * <code>.MyFriend myFriend = 10;</code>
      */
-    public MyFriendOrBuilder getMyFriendOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder getMyFriendOrBuilder() {
       if (bodyCase_ == 10) {
-         return (MyFriend) body_;
+         return (com.im2.common.protobuf.MessageTemplate.MyFriend) body_;
       }
-      return MyFriend.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
     }
 
     public static final int FRIEND_FIELD_NUMBER = 11;
@@ -1403,20 +1403,20 @@ public final class MessageTemplate {
     /**
      * <code>.Friend friend = 11;</code>
      */
-    public Friend getFriend() {
+    public com.im2.common.protobuf.MessageTemplate.Friend getFriend() {
       if (bodyCase_ == 11) {
-         return (Friend) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Friend) body_;
       }
-      return Friend.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
     }
     /**
      * <code>.Friend friend = 11;</code>
      */
-    public FriendOrBuilder getFriendOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.FriendOrBuilder getFriendOrBuilder() {
       if (bodyCase_ == 11) {
-         return (Friend) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Friend) body_;
       }
-      return Friend.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
     }
 
     public static final int PREINFO_FIELD_NUMBER = 12;
@@ -1429,20 +1429,20 @@ public final class MessageTemplate {
     /**
      * <code>.PreInfo preInfo = 12;</code>
      */
-    public PreInfo getPreInfo() {
+    public com.im2.common.protobuf.MessageTemplate.PreInfo getPreInfo() {
       if (bodyCase_ == 12) {
-         return (PreInfo) body_;
+         return (com.im2.common.protobuf.MessageTemplate.PreInfo) body_;
       }
-      return PreInfo.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
     }
     /**
      * <code>.PreInfo preInfo = 12;</code>
      */
-    public PreInfoOrBuilder getPreInfoOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder getPreInfoOrBuilder() {
       if (bodyCase_ == 12) {
-         return (PreInfo) body_;
+         return (com.im2.common.protobuf.MessageTemplate.PreInfo) body_;
       }
-      return PreInfo.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
     }
 
     public static final int ACCOUNT_FIELD_NUMBER = 13;
@@ -1455,24 +1455,24 @@ public final class MessageTemplate {
     /**
      * <code>.Account account = 13;</code>
      */
-    public Account getAccount() {
+    public com.im2.common.protobuf.MessageTemplate.Account getAccount() {
       if (bodyCase_ == 13) {
-         return (Account) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Account) body_;
       }
-      return Account.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
     }
     /**
      * <code>.Account account = 13;</code>
      */
-    public AccountOrBuilder getAccountOrBuilder() {
+    public com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getAccountOrBuilder() {
       if (bodyCase_ == 13) {
-         return (Account) body_;
+         return (com.im2.common.protobuf.MessageTemplate.Account) body_;
       }
-      return Account.getDefaultInstance();
+      return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1482,44 +1482,44 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sign_ != MessageSign.REQUEST.getNumber()) {
+      if (sign_ != com.im2.common.protobuf.MessageTemplate.MessageSign.REQUEST.getNumber()) {
         output.writeEnum(1, sign_);
       }
-      if (type_ != ActionType.LOGIN.getNumber()) {
+      if (type_ != com.im2.common.protobuf.MessageTemplate.ActionType.LOGIN.getNumber()) {
         output.writeEnum(2, type_);
       }
-      if (status_ != Status.SUCCESS.getNumber()) {
+      if (status_ != com.im2.common.protobuf.MessageTemplate.Status.SUCCESS.getNumber()) {
         output.writeEnum(3, status_);
       }
       if (!getTokenBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, token_);
       }
       if (bodyCase_ == 6) {
-        output.writeMessage(6, (Account) body_);
+        output.writeMessage(6, (com.im2.common.protobuf.MessageTemplate.Account) body_);
       }
       if (bodyCase_ == 7) {
-        output.writeMessage(7, (Member) body_);
+        output.writeMessage(7, (com.im2.common.protobuf.MessageTemplate.Member) body_);
       }
       if (bodyCase_ == 8) {
-        output.writeMessage(8, (Group) body_);
+        output.writeMessage(8, (com.im2.common.protobuf.MessageTemplate.Group) body_);
       }
       if (bodyCase_ == 9) {
-        output.writeMessage(9, (Info) body_);
+        output.writeMessage(9, (com.im2.common.protobuf.MessageTemplate.Info) body_);
       }
       if (bodyCase_ == 10) {
-        output.writeMessage(10, (MyFriend) body_);
+        output.writeMessage(10, (com.im2.common.protobuf.MessageTemplate.MyFriend) body_);
       }
       if (bodyCase_ == 11) {
-        output.writeMessage(11, (Friend) body_);
+        output.writeMessage(11, (com.im2.common.protobuf.MessageTemplate.Friend) body_);
       }
       if (bodyCase_ == 12) {
-        output.writeMessage(12, (PreInfo) body_);
+        output.writeMessage(12, (com.im2.common.protobuf.MessageTemplate.PreInfo) body_);
       }
       if (bodyCase_ == 13) {
-        output.writeMessage(13, (Account) body_);
+        output.writeMessage(13, (com.im2.common.protobuf.MessageTemplate.Account) body_);
       }
       if (!getUserSignBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, userSign_);
@@ -1527,21 +1527,21 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
 
       size = 0;
-      if (sign_ != MessageSign.REQUEST.getNumber()) {
+      if (sign_ != com.im2.common.protobuf.MessageTemplate.MessageSign.REQUEST.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, sign_);
       }
-      if (type_ != ActionType.LOGIN.getNumber()) {
+      if (type_ != com.im2.common.protobuf.MessageTemplate.ActionType.LOGIN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, type_);
       }
-      if (status_ != Status.SUCCESS.getNumber()) {
+      if (status_ != com.im2.common.protobuf.MessageTemplate.Status.SUCCESS.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, status_);
       }
@@ -1550,35 +1550,35 @@ public final class MessageTemplate {
       }
       if (bodyCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, (Account) body_);
+          .computeMessageSize(6, (com.im2.common.protobuf.MessageTemplate.Account) body_);
       }
       if (bodyCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, (Member) body_);
+          .computeMessageSize(7, (com.im2.common.protobuf.MessageTemplate.Member) body_);
       }
       if (bodyCase_ == 8) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, (Group) body_);
+          .computeMessageSize(8, (com.im2.common.protobuf.MessageTemplate.Group) body_);
       }
       if (bodyCase_ == 9) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (Info) body_);
+          .computeMessageSize(9, (com.im2.common.protobuf.MessageTemplate.Info) body_);
       }
       if (bodyCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (MyFriend) body_);
+          .computeMessageSize(10, (com.im2.common.protobuf.MessageTemplate.MyFriend) body_);
       }
       if (bodyCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (Friend) body_);
+          .computeMessageSize(11, (com.im2.common.protobuf.MessageTemplate.Friend) body_);
       }
       if (bodyCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (PreInfo) body_);
+          .computeMessageSize(12, (com.im2.common.protobuf.MessageTemplate.PreInfo) body_);
       }
       if (bodyCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (Account) body_);
+          .computeMessageSize(13, (com.im2.common.protobuf.MessageTemplate.Account) body_);
       }
       if (!getUserSignBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, userSign_);
@@ -1588,15 +1588,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Message)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Message)) {
         return super.equals(obj);
       }
-      Message other = (Message) obj;
+      com.im2.common.protobuf.MessageTemplate.Message other = (com.im2.common.protobuf.MessageTemplate.Message) obj;
 
       boolean result = true;
       result = result && getUserSign()
@@ -1649,7 +1649,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1707,69 +1707,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Message parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Message parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Message parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Message parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Message parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1777,23 +1777,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Message prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Message prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1803,18 +1803,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Message)
-        MessageOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Message_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Message_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Message_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Message.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Message.class, com.im2.common.protobuf.MessageTemplate.Message.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Message.newBuilder()
@@ -1823,7 +1823,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1832,7 +1832,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         userSign_ = "";
@@ -1850,29 +1850,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Message_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Message_descriptor;
       }
 
-      @Override
-      public Message getDefaultInstanceForType() {
-        return Message.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Message getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Message.getDefaultInstance();
       }
 
-      @Override
-      public Message build() {
-        Message result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Message build() {
+        com.im2.common.protobuf.MessageTemplate.Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Message buildPartial() {
-        Message result = new Message(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Message buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Message result = new com.im2.common.protobuf.MessageTemplate.Message(this);
         result.userSign_ = userSign_;
         result.sign_ = sign_;
         result.type_ = type_;
@@ -1939,50 +1939,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Message) {
-          return mergeFrom((Message)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Message) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Message other) {
-        if (other == Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Message other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Message.getDefaultInstance()) return this;
         if (!other.getUserSign().isEmpty()) {
           userSign_ = other.userSign_;
           onChanged();
@@ -2042,21 +2042,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Message parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Message) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Message) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2066,7 +2066,7 @@ public final class MessageTemplate {
         return this;
       }
       private int bodyCase_ = 0;
-      private Object body_;
+      private java.lang.Object body_;
       public BodyCase
           getBodyCase() {
         return BodyCase.forNumber(
@@ -2081,20 +2081,20 @@ public final class MessageTemplate {
       }
 
 
-      private Object userSign_ = "";
+      private java.lang.Object userSign_ = "";
       /**
        * <code>string userSign = 14;</code>
        */
-      public String getUserSign() {
-        Object ref = userSign_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUserSign() {
+        java.lang.Object ref = userSign_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           userSign_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2102,11 +2102,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUserSignBytes() {
-        Object ref = userSign_;
+        java.lang.Object ref = userSign_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           userSign_ = b;
           return b;
         } else {
@@ -2117,7 +2117,7 @@ public final class MessageTemplate {
        * <code>string userSign = 14;</code>
        */
       public Builder setUserSign(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2180,10 +2180,10 @@ public final class MessageTemplate {
        *
        * <code>.MessageSign sign = 1;</code>
        */
-      public MessageSign getSign() {
+      public com.im2.common.protobuf.MessageTemplate.MessageSign getSign() {
         @SuppressWarnings("deprecation")
-        MessageSign result = MessageSign.valueOf(sign_);
-        return result == null ? MessageSign.UNRECOGNIZED : result;
+        com.im2.common.protobuf.MessageTemplate.MessageSign result = com.im2.common.protobuf.MessageTemplate.MessageSign.valueOf(sign_);
+        return result == null ? com.im2.common.protobuf.MessageTemplate.MessageSign.UNRECOGNIZED : result;
       }
       /**
        * <pre>
@@ -2192,7 +2192,7 @@ public final class MessageTemplate {
        *
        * <code>.MessageSign sign = 1;</code>
        */
-      public Builder setSign(MessageSign value) {
+      public Builder setSign(com.im2.common.protobuf.MessageTemplate.MessageSign value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2245,10 +2245,10 @@ public final class MessageTemplate {
        *
        * <code>.ActionType type = 2;</code>
        */
-      public ActionType getType() {
+      public com.im2.common.protobuf.MessageTemplate.ActionType getType() {
         @SuppressWarnings("deprecation")
-        ActionType result = ActionType.valueOf(type_);
-        return result == null ? ActionType.UNRECOGNIZED : result;
+        com.im2.common.protobuf.MessageTemplate.ActionType result = com.im2.common.protobuf.MessageTemplate.ActionType.valueOf(type_);
+        return result == null ? com.im2.common.protobuf.MessageTemplate.ActionType.UNRECOGNIZED : result;
       }
       /**
        * <pre>
@@ -2257,7 +2257,7 @@ public final class MessageTemplate {
        *
        * <code>.ActionType type = 2;</code>
        */
-      public Builder setType(ActionType value) {
+      public Builder setType(com.im2.common.protobuf.MessageTemplate.ActionType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2310,10 +2310,10 @@ public final class MessageTemplate {
        *
        * <code>.Status status = 3;</code>
        */
-      public Status getStatus() {
+      public com.im2.common.protobuf.MessageTemplate.Status getStatus() {
         @SuppressWarnings("deprecation")
-        Status result = Status.valueOf(status_);
-        return result == null ? Status.UNRECOGNIZED : result;
+        com.im2.common.protobuf.MessageTemplate.Status result = com.im2.common.protobuf.MessageTemplate.Status.valueOf(status_);
+        return result == null ? com.im2.common.protobuf.MessageTemplate.Status.UNRECOGNIZED : result;
       }
       /**
        * <pre>
@@ -2322,7 +2322,7 @@ public final class MessageTemplate {
        *
        * <code>.Status status = 3;</code>
        */
-      public Builder setStatus(Status value) {
+      public Builder setStatus(com.im2.common.protobuf.MessageTemplate.Status value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2345,7 +2345,7 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object token_ = "";
+      private java.lang.Object token_ = "";
       /**
        * <pre>
        *token
@@ -2353,16 +2353,16 @@ public final class MessageTemplate {
        *
        * <code>string token = 5;</code>
        */
-      public String getToken() {
-        Object ref = token_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getToken() {
+        java.lang.Object ref = token_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           token_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2374,11 +2374,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getTokenBytes() {
-        Object ref = token_;
+        java.lang.Object ref = token_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           token_ = b;
           return b;
         } else {
@@ -2393,7 +2393,7 @@ public final class MessageTemplate {
        * <code>string token = 5;</code>
        */
       public Builder setToken(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2435,7 +2435,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Account, Account.Builder, AccountOrBuilder> loginBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder> loginBuilder_;
       /**
        * <code>.Account login = 6;</code>
        */
@@ -2445,23 +2445,23 @@ public final class MessageTemplate {
       /**
        * <code>.Account login = 6;</code>
        */
-      public Account getLogin() {
+      public com.im2.common.protobuf.MessageTemplate.Account getLogin() {
         if (loginBuilder_ == null) {
           if (bodyCase_ == 6) {
-            return (Account) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Account) body_;
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         } else {
           if (bodyCase_ == 6) {
             return loginBuilder_.getMessage();
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         }
       }
       /**
        * <code>.Account login = 6;</code>
        */
-      public Builder setLogin(Account value) {
+      public Builder setLogin(com.im2.common.protobuf.MessageTemplate.Account value) {
         if (loginBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2478,7 +2478,7 @@ public final class MessageTemplate {
        * <code>.Account login = 6;</code>
        */
       public Builder setLogin(
-          Account.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Account.Builder builderForValue) {
         if (loginBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -2491,11 +2491,11 @@ public final class MessageTemplate {
       /**
        * <code>.Account login = 6;</code>
        */
-      public Builder mergeLogin(Account value) {
+      public Builder mergeLogin(com.im2.common.protobuf.MessageTemplate.Account value) {
         if (loginBuilder_ == null) {
           if (bodyCase_ == 6 &&
-              body_ != Account.getDefaultInstance()) {
-            body_ = Account.newBuilder((Account) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Account.newBuilder((com.im2.common.protobuf.MessageTemplate.Account) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -2532,35 +2532,35 @@ public final class MessageTemplate {
       /**
        * <code>.Account login = 6;</code>
        */
-      public Account.Builder getLoginBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Account.Builder getLoginBuilder() {
         return getLoginFieldBuilder().getBuilder();
       }
       /**
        * <code>.Account login = 6;</code>
        */
-      public AccountOrBuilder getLoginOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getLoginOrBuilder() {
         if ((bodyCase_ == 6) && (loginBuilder_ != null)) {
           return loginBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 6) {
-            return (Account) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Account) body_;
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         }
       }
       /**
        * <code>.Account login = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Account, Account.Builder, AccountOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder> 
           getLoginFieldBuilder() {
         if (loginBuilder_ == null) {
           if (!(bodyCase_ == 6)) {
-            body_ = Account.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
           }
           loginBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Account, Account.Builder, AccountOrBuilder>(
-                  (Account) body_,
+              com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Account) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -2571,7 +2571,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Member, Member.Builder, MemberOrBuilder> memberBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Member, com.im2.common.protobuf.MessageTemplate.Member.Builder, com.im2.common.protobuf.MessageTemplate.MemberOrBuilder> memberBuilder_;
       /**
        * <code>.Member member = 7;</code>
        */
@@ -2581,23 +2581,23 @@ public final class MessageTemplate {
       /**
        * <code>.Member member = 7;</code>
        */
-      public Member getMember() {
+      public com.im2.common.protobuf.MessageTemplate.Member getMember() {
         if (memberBuilder_ == null) {
           if (bodyCase_ == 7) {
-            return (Member) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Member) body_;
           }
-          return Member.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
         } else {
           if (bodyCase_ == 7) {
             return memberBuilder_.getMessage();
           }
-          return Member.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
         }
       }
       /**
        * <code>.Member member = 7;</code>
        */
-      public Builder setMember(Member value) {
+      public Builder setMember(com.im2.common.protobuf.MessageTemplate.Member value) {
         if (memberBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2614,7 +2614,7 @@ public final class MessageTemplate {
        * <code>.Member member = 7;</code>
        */
       public Builder setMember(
-          Member.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Member.Builder builderForValue) {
         if (memberBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -2627,11 +2627,11 @@ public final class MessageTemplate {
       /**
        * <code>.Member member = 7;</code>
        */
-      public Builder mergeMember(Member value) {
+      public Builder mergeMember(com.im2.common.protobuf.MessageTemplate.Member value) {
         if (memberBuilder_ == null) {
           if (bodyCase_ == 7 &&
-              body_ != Member.getDefaultInstance()) {
-            body_ = Member.newBuilder((Member) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Member.newBuilder((com.im2.common.protobuf.MessageTemplate.Member) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -2668,35 +2668,35 @@ public final class MessageTemplate {
       /**
        * <code>.Member member = 7;</code>
        */
-      public Member.Builder getMemberBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Member.Builder getMemberBuilder() {
         return getMemberFieldBuilder().getBuilder();
       }
       /**
        * <code>.Member member = 7;</code>
        */
-      public MemberOrBuilder getMemberOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.MemberOrBuilder getMemberOrBuilder() {
         if ((bodyCase_ == 7) && (memberBuilder_ != null)) {
           return memberBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 7) {
-            return (Member) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Member) body_;
           }
-          return Member.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
         }
       }
       /**
        * <code>.Member member = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Member, Member.Builder, MemberOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Member, com.im2.common.protobuf.MessageTemplate.Member.Builder, com.im2.common.protobuf.MessageTemplate.MemberOrBuilder> 
           getMemberFieldBuilder() {
         if (memberBuilder_ == null) {
           if (!(bodyCase_ == 7)) {
-            body_ = Member.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
           }
           memberBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Member, Member.Builder, MemberOrBuilder>(
-                  (Member) body_,
+              com.im2.common.protobuf.MessageTemplate.Member, com.im2.common.protobuf.MessageTemplate.Member.Builder, com.im2.common.protobuf.MessageTemplate.MemberOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Member) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -2707,7 +2707,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Group, Group.Builder, GroupOrBuilder> groupBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Group, com.im2.common.protobuf.MessageTemplate.Group.Builder, com.im2.common.protobuf.MessageTemplate.GroupOrBuilder> groupBuilder_;
       /**
        * <code>.Group group = 8;</code>
        */
@@ -2717,23 +2717,23 @@ public final class MessageTemplate {
       /**
        * <code>.Group group = 8;</code>
        */
-      public Group getGroup() {
+      public com.im2.common.protobuf.MessageTemplate.Group getGroup() {
         if (groupBuilder_ == null) {
           if (bodyCase_ == 8) {
-            return (Group) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Group) body_;
           }
-          return Group.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
         } else {
           if (bodyCase_ == 8) {
             return groupBuilder_.getMessage();
           }
-          return Group.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
         }
       }
       /**
        * <code>.Group group = 8;</code>
        */
-      public Builder setGroup(Group value) {
+      public Builder setGroup(com.im2.common.protobuf.MessageTemplate.Group value) {
         if (groupBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2750,7 +2750,7 @@ public final class MessageTemplate {
        * <code>.Group group = 8;</code>
        */
       public Builder setGroup(
-          Group.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Group.Builder builderForValue) {
         if (groupBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -2763,11 +2763,11 @@ public final class MessageTemplate {
       /**
        * <code>.Group group = 8;</code>
        */
-      public Builder mergeGroup(Group value) {
+      public Builder mergeGroup(com.im2.common.protobuf.MessageTemplate.Group value) {
         if (groupBuilder_ == null) {
           if (bodyCase_ == 8 &&
-              body_ != Group.getDefaultInstance()) {
-            body_ = Group.newBuilder((Group) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Group.newBuilder((com.im2.common.protobuf.MessageTemplate.Group) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -2804,35 +2804,35 @@ public final class MessageTemplate {
       /**
        * <code>.Group group = 8;</code>
        */
-      public Group.Builder getGroupBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Group.Builder getGroupBuilder() {
         return getGroupFieldBuilder().getBuilder();
       }
       /**
        * <code>.Group group = 8;</code>
        */
-      public GroupOrBuilder getGroupOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.GroupOrBuilder getGroupOrBuilder() {
         if ((bodyCase_ == 8) && (groupBuilder_ != null)) {
           return groupBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 8) {
-            return (Group) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Group) body_;
           }
-          return Group.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
         }
       }
       /**
        * <code>.Group group = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Group, Group.Builder, GroupOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Group, com.im2.common.protobuf.MessageTemplate.Group.Builder, com.im2.common.protobuf.MessageTemplate.GroupOrBuilder> 
           getGroupFieldBuilder() {
         if (groupBuilder_ == null) {
           if (!(bodyCase_ == 8)) {
-            body_ = Group.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
           }
           groupBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Group, Group.Builder, GroupOrBuilder>(
-                  (Group) body_,
+              com.im2.common.protobuf.MessageTemplate.Group, com.im2.common.protobuf.MessageTemplate.Group.Builder, com.im2.common.protobuf.MessageTemplate.GroupOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Group) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -2843,7 +2843,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Info, Info.Builder, InfoOrBuilder> infoBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Info, com.im2.common.protobuf.MessageTemplate.Info.Builder, com.im2.common.protobuf.MessageTemplate.InfoOrBuilder> infoBuilder_;
       /**
        * <code>.Info info = 9;</code>
        */
@@ -2853,23 +2853,23 @@ public final class MessageTemplate {
       /**
        * <code>.Info info = 9;</code>
        */
-      public Info getInfo() {
+      public com.im2.common.protobuf.MessageTemplate.Info getInfo() {
         if (infoBuilder_ == null) {
           if (bodyCase_ == 9) {
-            return (Info) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Info) body_;
           }
-          return Info.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
         } else {
           if (bodyCase_ == 9) {
             return infoBuilder_.getMessage();
           }
-          return Info.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
         }
       }
       /**
        * <code>.Info info = 9;</code>
        */
-      public Builder setInfo(Info value) {
+      public Builder setInfo(com.im2.common.protobuf.MessageTemplate.Info value) {
         if (infoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2886,7 +2886,7 @@ public final class MessageTemplate {
        * <code>.Info info = 9;</code>
        */
       public Builder setInfo(
-          Info.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Info.Builder builderForValue) {
         if (infoBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -2899,11 +2899,11 @@ public final class MessageTemplate {
       /**
        * <code>.Info info = 9;</code>
        */
-      public Builder mergeInfo(Info value) {
+      public Builder mergeInfo(com.im2.common.protobuf.MessageTemplate.Info value) {
         if (infoBuilder_ == null) {
           if (bodyCase_ == 9 &&
-              body_ != Info.getDefaultInstance()) {
-            body_ = Info.newBuilder((Info) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Info.newBuilder((com.im2.common.protobuf.MessageTemplate.Info) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -2940,35 +2940,35 @@ public final class MessageTemplate {
       /**
        * <code>.Info info = 9;</code>
        */
-      public Info.Builder getInfoBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Info.Builder getInfoBuilder() {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
        * <code>.Info info = 9;</code>
        */
-      public InfoOrBuilder getInfoOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.InfoOrBuilder getInfoOrBuilder() {
         if ((bodyCase_ == 9) && (infoBuilder_ != null)) {
           return infoBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 9) {
-            return (Info) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Info) body_;
           }
-          return Info.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
         }
       }
       /**
        * <code>.Info info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Info, Info.Builder, InfoOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Info, com.im2.common.protobuf.MessageTemplate.Info.Builder, com.im2.common.protobuf.MessageTemplate.InfoOrBuilder> 
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           if (!(bodyCase_ == 9)) {
-            body_ = Info.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
           }
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Info, Info.Builder, InfoOrBuilder>(
-                  (Info) body_,
+              com.im2.common.protobuf.MessageTemplate.Info, com.im2.common.protobuf.MessageTemplate.Info.Builder, com.im2.common.protobuf.MessageTemplate.InfoOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Info) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -2979,7 +2979,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          MyFriend, MyFriend.Builder, MyFriendOrBuilder> myFriendBuilder_;
+          com.im2.common.protobuf.MessageTemplate.MyFriend, com.im2.common.protobuf.MessageTemplate.MyFriend.Builder, com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder> myFriendBuilder_;
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
@@ -2989,23 +2989,23 @@ public final class MessageTemplate {
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
-      public MyFriend getMyFriend() {
+      public com.im2.common.protobuf.MessageTemplate.MyFriend getMyFriend() {
         if (myFriendBuilder_ == null) {
           if (bodyCase_ == 10) {
-            return (MyFriend) body_;
+            return (com.im2.common.protobuf.MessageTemplate.MyFriend) body_;
           }
-          return MyFriend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
         } else {
           if (bodyCase_ == 10) {
             return myFriendBuilder_.getMessage();
           }
-          return MyFriend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
         }
       }
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
-      public Builder setMyFriend(MyFriend value) {
+      public Builder setMyFriend(com.im2.common.protobuf.MessageTemplate.MyFriend value) {
         if (myFriendBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3022,7 +3022,7 @@ public final class MessageTemplate {
        * <code>.MyFriend myFriend = 10;</code>
        */
       public Builder setMyFriend(
-          MyFriend.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.MyFriend.Builder builderForValue) {
         if (myFriendBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -3035,11 +3035,11 @@ public final class MessageTemplate {
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
-      public Builder mergeMyFriend(MyFriend value) {
+      public Builder mergeMyFriend(com.im2.common.protobuf.MessageTemplate.MyFriend value) {
         if (myFriendBuilder_ == null) {
           if (bodyCase_ == 10 &&
-              body_ != MyFriend.getDefaultInstance()) {
-            body_ = MyFriend.newBuilder((MyFriend) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.MyFriend.newBuilder((com.im2.common.protobuf.MessageTemplate.MyFriend) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -3076,35 +3076,35 @@ public final class MessageTemplate {
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
-      public MyFriend.Builder getMyFriendBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.MyFriend.Builder getMyFriendBuilder() {
         return getMyFriendFieldBuilder().getBuilder();
       }
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
-      public MyFriendOrBuilder getMyFriendOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder getMyFriendOrBuilder() {
         if ((bodyCase_ == 10) && (myFriendBuilder_ != null)) {
           return myFriendBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 10) {
-            return (MyFriend) body_;
+            return (com.im2.common.protobuf.MessageTemplate.MyFriend) body_;
           }
-          return MyFriend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
         }
       }
       /**
        * <code>.MyFriend myFriend = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          MyFriend, MyFriend.Builder, MyFriendOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.MyFriend, com.im2.common.protobuf.MessageTemplate.MyFriend.Builder, com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder> 
           getMyFriendFieldBuilder() {
         if (myFriendBuilder_ == null) {
           if (!(bodyCase_ == 10)) {
-            body_ = MyFriend.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
           }
           myFriendBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              MyFriend, MyFriend.Builder, MyFriendOrBuilder>(
-                  (MyFriend) body_,
+              com.im2.common.protobuf.MessageTemplate.MyFriend, com.im2.common.protobuf.MessageTemplate.MyFriend.Builder, com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.MyFriend) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -3115,7 +3115,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Friend, Friend.Builder, FriendOrBuilder> friendBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Friend, com.im2.common.protobuf.MessageTemplate.Friend.Builder, com.im2.common.protobuf.MessageTemplate.FriendOrBuilder> friendBuilder_;
       /**
        * <code>.Friend friend = 11;</code>
        */
@@ -3125,23 +3125,23 @@ public final class MessageTemplate {
       /**
        * <code>.Friend friend = 11;</code>
        */
-      public Friend getFriend() {
+      public com.im2.common.protobuf.MessageTemplate.Friend getFriend() {
         if (friendBuilder_ == null) {
           if (bodyCase_ == 11) {
-            return (Friend) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Friend) body_;
           }
-          return Friend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
         } else {
           if (bodyCase_ == 11) {
             return friendBuilder_.getMessage();
           }
-          return Friend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
         }
       }
       /**
        * <code>.Friend friend = 11;</code>
        */
-      public Builder setFriend(Friend value) {
+      public Builder setFriend(com.im2.common.protobuf.MessageTemplate.Friend value) {
         if (friendBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3158,7 +3158,7 @@ public final class MessageTemplate {
        * <code>.Friend friend = 11;</code>
        */
       public Builder setFriend(
-          Friend.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Friend.Builder builderForValue) {
         if (friendBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -3171,11 +3171,11 @@ public final class MessageTemplate {
       /**
        * <code>.Friend friend = 11;</code>
        */
-      public Builder mergeFriend(Friend value) {
+      public Builder mergeFriend(com.im2.common.protobuf.MessageTemplate.Friend value) {
         if (friendBuilder_ == null) {
           if (bodyCase_ == 11 &&
-              body_ != Friend.getDefaultInstance()) {
-            body_ = Friend.newBuilder((Friend) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Friend.newBuilder((com.im2.common.protobuf.MessageTemplate.Friend) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -3212,35 +3212,35 @@ public final class MessageTemplate {
       /**
        * <code>.Friend friend = 11;</code>
        */
-      public Friend.Builder getFriendBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Friend.Builder getFriendBuilder() {
         return getFriendFieldBuilder().getBuilder();
       }
       /**
        * <code>.Friend friend = 11;</code>
        */
-      public FriendOrBuilder getFriendOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.FriendOrBuilder getFriendOrBuilder() {
         if ((bodyCase_ == 11) && (friendBuilder_ != null)) {
           return friendBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 11) {
-            return (Friend) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Friend) body_;
           }
-          return Friend.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
         }
       }
       /**
        * <code>.Friend friend = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Friend, Friend.Builder, FriendOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Friend, com.im2.common.protobuf.MessageTemplate.Friend.Builder, com.im2.common.protobuf.MessageTemplate.FriendOrBuilder> 
           getFriendFieldBuilder() {
         if (friendBuilder_ == null) {
           if (!(bodyCase_ == 11)) {
-            body_ = Friend.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
           }
           friendBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Friend, Friend.Builder, FriendOrBuilder>(
-                  (Friend) body_,
+              com.im2.common.protobuf.MessageTemplate.Friend, com.im2.common.protobuf.MessageTemplate.Friend.Builder, com.im2.common.protobuf.MessageTemplate.FriendOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Friend) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -3251,7 +3251,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          PreInfo, PreInfo.Builder, PreInfoOrBuilder> preInfoBuilder_;
+          com.im2.common.protobuf.MessageTemplate.PreInfo, com.im2.common.protobuf.MessageTemplate.PreInfo.Builder, com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder> preInfoBuilder_;
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
@@ -3261,23 +3261,23 @@ public final class MessageTemplate {
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
-      public PreInfo getPreInfo() {
+      public com.im2.common.protobuf.MessageTemplate.PreInfo getPreInfo() {
         if (preInfoBuilder_ == null) {
           if (bodyCase_ == 12) {
-            return (PreInfo) body_;
+            return (com.im2.common.protobuf.MessageTemplate.PreInfo) body_;
           }
-          return PreInfo.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
         } else {
           if (bodyCase_ == 12) {
             return preInfoBuilder_.getMessage();
           }
-          return PreInfo.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
-      public Builder setPreInfo(PreInfo value) {
+      public Builder setPreInfo(com.im2.common.protobuf.MessageTemplate.PreInfo value) {
         if (preInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3294,7 +3294,7 @@ public final class MessageTemplate {
        * <code>.PreInfo preInfo = 12;</code>
        */
       public Builder setPreInfo(
-          PreInfo.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.PreInfo.Builder builderForValue) {
         if (preInfoBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -3307,11 +3307,11 @@ public final class MessageTemplate {
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
-      public Builder mergePreInfo(PreInfo value) {
+      public Builder mergePreInfo(com.im2.common.protobuf.MessageTemplate.PreInfo value) {
         if (preInfoBuilder_ == null) {
           if (bodyCase_ == 12 &&
-              body_ != PreInfo.getDefaultInstance()) {
-            body_ = PreInfo.newBuilder((PreInfo) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.PreInfo.newBuilder((com.im2.common.protobuf.MessageTemplate.PreInfo) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -3348,35 +3348,35 @@ public final class MessageTemplate {
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
-      public PreInfo.Builder getPreInfoBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.PreInfo.Builder getPreInfoBuilder() {
         return getPreInfoFieldBuilder().getBuilder();
       }
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
-      public PreInfoOrBuilder getPreInfoOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder getPreInfoOrBuilder() {
         if ((bodyCase_ == 12) && (preInfoBuilder_ != null)) {
           return preInfoBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 12) {
-            return (PreInfo) body_;
+            return (com.im2.common.protobuf.MessageTemplate.PreInfo) body_;
           }
-          return PreInfo.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
         }
       }
       /**
        * <code>.PreInfo preInfo = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          PreInfo, PreInfo.Builder, PreInfoOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.PreInfo, com.im2.common.protobuf.MessageTemplate.PreInfo.Builder, com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder> 
           getPreInfoFieldBuilder() {
         if (preInfoBuilder_ == null) {
           if (!(bodyCase_ == 12)) {
-            body_ = PreInfo.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
           }
           preInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              PreInfo, PreInfo.Builder, PreInfoOrBuilder>(
-                  (PreInfo) body_,
+              com.im2.common.protobuf.MessageTemplate.PreInfo, com.im2.common.protobuf.MessageTemplate.PreInfo.Builder, com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.PreInfo) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -3387,7 +3387,7 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          Account, Account.Builder, AccountOrBuilder> accountBuilder_;
+          com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder> accountBuilder_;
       /**
        * <code>.Account account = 13;</code>
        */
@@ -3397,23 +3397,23 @@ public final class MessageTemplate {
       /**
        * <code>.Account account = 13;</code>
        */
-      public Account getAccount() {
+      public com.im2.common.protobuf.MessageTemplate.Account getAccount() {
         if (accountBuilder_ == null) {
           if (bodyCase_ == 13) {
-            return (Account) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Account) body_;
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         } else {
           if (bodyCase_ == 13) {
             return accountBuilder_.getMessage();
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         }
       }
       /**
        * <code>.Account account = 13;</code>
        */
-      public Builder setAccount(Account value) {
+      public Builder setAccount(com.im2.common.protobuf.MessageTemplate.Account value) {
         if (accountBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3430,7 +3430,7 @@ public final class MessageTemplate {
        * <code>.Account account = 13;</code>
        */
       public Builder setAccount(
-          Account.Builder builderForValue) {
+          com.im2.common.protobuf.MessageTemplate.Account.Builder builderForValue) {
         if (accountBuilder_ == null) {
           body_ = builderForValue.build();
           onChanged();
@@ -3443,11 +3443,11 @@ public final class MessageTemplate {
       /**
        * <code>.Account account = 13;</code>
        */
-      public Builder mergeAccount(Account value) {
+      public Builder mergeAccount(com.im2.common.protobuf.MessageTemplate.Account value) {
         if (accountBuilder_ == null) {
           if (bodyCase_ == 13 &&
-              body_ != Account.getDefaultInstance()) {
-            body_ = Account.newBuilder((Account) body_)
+              body_ != com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance()) {
+            body_ = com.im2.common.protobuf.MessageTemplate.Account.newBuilder((com.im2.common.protobuf.MessageTemplate.Account) body_)
                 .mergeFrom(value).buildPartial();
           } else {
             body_ = value;
@@ -3484,35 +3484,35 @@ public final class MessageTemplate {
       /**
        * <code>.Account account = 13;</code>
        */
-      public Account.Builder getAccountBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.Account.Builder getAccountBuilder() {
         return getAccountFieldBuilder().getBuilder();
       }
       /**
        * <code>.Account account = 13;</code>
        */
-      public AccountOrBuilder getAccountOrBuilder() {
+      public com.im2.common.protobuf.MessageTemplate.AccountOrBuilder getAccountOrBuilder() {
         if ((bodyCase_ == 13) && (accountBuilder_ != null)) {
           return accountBuilder_.getMessageOrBuilder();
         } else {
           if (bodyCase_ == 13) {
-            return (Account) body_;
+            return (com.im2.common.protobuf.MessageTemplate.Account) body_;
           }
-          return Account.getDefaultInstance();
+          return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
         }
       }
       /**
        * <code>.Account account = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          Account, Account.Builder, AccountOrBuilder>
+          com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder> 
           getAccountFieldBuilder() {
         if (accountBuilder_ == null) {
           if (!(bodyCase_ == 13)) {
-            body_ = Account.getDefaultInstance();
+            body_ = com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
           }
           accountBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              Account, Account.Builder, AccountOrBuilder>(
-                  (Account) body_,
+              com.im2.common.protobuf.MessageTemplate.Account, com.im2.common.protobuf.MessageTemplate.Account.Builder, com.im2.common.protobuf.MessageTemplate.AccountOrBuilder>(
+                  (com.im2.common.protobuf.MessageTemplate.Account) body_,
                   getParentForChildren(),
                   isClean());
           body_ = null;
@@ -3521,13 +3521,13 @@ public final class MessageTemplate {
         onChanged();;
         return accountBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -3538,18 +3538,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Message)
-    private static final Message DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Message DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Message();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Message();
     }
 
-    public static Message getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Message getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Message>
         PARSER = new com.google.protobuf.AbstractParser<Message>() {
-      @Override
+      @java.lang.Override
       public Message parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3562,13 +3562,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Message> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Message getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Message getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3581,7 +3581,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -3596,31 +3596,31 @@ public final class MessageTemplate {
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
     boolean containsGroups(
-            String key);
+        java.lang.String key);
     /**
      * Use {@link #getGroupsMap()} instead.
      */
-    @Deprecated
-    java.util.Map<String, list>
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
     getGroups();
     /**
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
-    java.util.Map<String, list>
+    java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
     getGroupsMap();
     /**
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
 
-    list getGroupsOrDefault(
-            String key,
-            list defaultValue);
+    com.im2.common.protobuf.MessageTemplate.list getGroupsOrDefault(
+        java.lang.String key,
+        com.im2.common.protobuf.MessageTemplate.list defaultValue);
     /**
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
 
-    list getGroupsOrThrow(
-            String key);
+    com.im2.common.protobuf.MessageTemplate.list getGroupsOrThrow(
+        java.lang.String key);
   }
   /**
    * <pre>
@@ -3642,7 +3642,7 @@ public final class MessageTemplate {
       username_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -3653,7 +3653,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -3667,7 +3667,7 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
@@ -3678,7 +3678,7 @@ public final class MessageTemplate {
                     GroupsDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
-              com.google.protobuf.MapEntry<String, list>
+              com.google.protobuf.MapEntry<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
               groups__ = input.readMessage(
                   GroupsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               groups_.getMutableMap().put(
@@ -3706,11 +3706,11 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_MyGroup_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
@@ -3721,28 +3721,28 @@ public final class MessageTemplate {
               "Invalid map field number: " + number);
       }
     }
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_MyGroup_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MyGroup.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.MyGroup.class, com.im2.common.protobuf.MessageTemplate.MyGroup.Builder.class);
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -3752,11 +3752,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -3767,18 +3767,18 @@ public final class MessageTemplate {
     public static final int GROUPS_FIELD_NUMBER = 2;
     private static final class GroupsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          String, list> defaultEntry =
+          java.lang.String, com.im2.common.protobuf.MessageTemplate.list> defaultEntry =
               com.google.protobuf.MapEntry
-              .<String, list>newDefaultInstance(
-                  MessageTemplate.internal_static_MyGroup_GroupsEntry_descriptor,
+              .<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>newDefaultInstance(
+                  com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_GroupsEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  list.getDefaultInstance());
+                  com.im2.common.protobuf.MessageTemplate.list.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        String, list> groups_;
-    private com.google.protobuf.MapField<String, list>
+        java.lang.String, com.im2.common.protobuf.MessageTemplate.list> groups_;
+    private com.google.protobuf.MapField<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
     internalGetGroups() {
       if (groups_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -3795,33 +3795,33 @@ public final class MessageTemplate {
      */
 
     public boolean containsGroups(
-        String key) {
-      if (key == null) { throw new NullPointerException(); }
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       return internalGetGroups().getMap().containsKey(key);
     }
     /**
      * Use {@link #getGroupsMap()} instead.
      */
-    @Deprecated
-    public java.util.Map<String, list> getGroups() {
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> getGroups() {
       return getGroupsMap();
     }
     /**
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
 
-    public java.util.Map<String, list> getGroupsMap() {
+    public java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> getGroupsMap() {
       return internalGetGroups().getMap();
     }
     /**
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
 
-    public list getGroupsOrDefault(
-        String key,
-        list defaultValue) {
-      if (key == null) { throw new NullPointerException(); }
-      java.util.Map<String, list> map =
+    public com.im2.common.protobuf.MessageTemplate.list getGroupsOrDefault(
+        java.lang.String key,
+        com.im2.common.protobuf.MessageTemplate.list defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> map =
           internalGetGroups().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
@@ -3829,19 +3829,19 @@ public final class MessageTemplate {
      * <code>map&lt;string, .list&gt; groups = 2;</code>
      */
 
-    public list getGroupsOrThrow(
-        String key) {
-      if (key == null) { throw new NullPointerException(); }
-      java.util.Map<String, list> map =
+    public com.im2.common.protobuf.MessageTemplate.list getGroupsOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> map =
           internalGetGroups().getMap();
       if (!map.containsKey(key)) {
-        throw new IllegalArgumentException();
+        throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -3851,7 +3851,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -3866,7 +3866,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -3875,9 +3875,9 @@ public final class MessageTemplate {
       if (!getUsernameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, username_);
       }
-      for (java.util.Map.Entry<String, list> entry
+      for (java.util.Map.Entry<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> entry
            : internalGetGroups().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<String, list>
+        com.google.protobuf.MapEntry<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
         groups__ = GroupsDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -3890,15 +3890,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof MyGroup)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.MyGroup)) {
         return super.equals(obj);
       }
-      MyGroup other = (MyGroup) obj;
+      com.im2.common.protobuf.MessageTemplate.MyGroup other = (com.im2.common.protobuf.MessageTemplate.MyGroup) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -3909,7 +3909,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -3927,69 +3927,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyGroup parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyGroup parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MyGroup parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static MyGroup parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MyGroup parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3997,23 +3997,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(MyGroup prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.MyGroup prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4027,10 +4027,10 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:MyGroup)
-        MyGroupOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.MyGroupOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_MyGroup_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -4055,12 +4055,12 @@ public final class MessageTemplate {
                 "Invalid map field number: " + number);
         }
       }
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_MyGroup_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MyGroup.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.MyGroup.class, com.im2.common.protobuf.MessageTemplate.MyGroup.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.MyGroup.newBuilder()
@@ -4069,7 +4069,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4078,7 +4078,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -4087,29 +4087,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_MyGroup_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyGroup_descriptor;
       }
 
-      @Override
-      public MyGroup getDefaultInstanceForType() {
-        return MyGroup.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyGroup getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.MyGroup.getDefaultInstance();
       }
 
-      @Override
-      public MyGroup build() {
-        MyGroup result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyGroup build() {
+        com.im2.common.protobuf.MessageTemplate.MyGroup result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public MyGroup buildPartial() {
-        MyGroup result = new MyGroup(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyGroup buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.MyGroup result = new com.im2.common.protobuf.MessageTemplate.MyGroup(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.username_ = username_;
@@ -4120,50 +4120,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MyGroup) {
-          return mergeFrom((MyGroup)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.MyGroup) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.MyGroup)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MyGroup other) {
-        if (other == MyGroup.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.MyGroup other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.MyGroup.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -4175,21 +4175,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MyGroup parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.MyGroup parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MyGroup) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.MyGroup) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4200,20 +4200,20 @@ public final class MessageTemplate {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -4221,11 +4221,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -4236,7 +4236,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4270,8 +4270,8 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.MapField<
-          String, list> groups_;
-      private com.google.protobuf.MapField<String, list>
+          java.lang.String, com.im2.common.protobuf.MessageTemplate.list> groups_;
+      private com.google.protobuf.MapField<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
       internalGetGroups() {
         if (groups_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -4279,7 +4279,7 @@ public final class MessageTemplate {
         }
         return groups_;
       }
-      private com.google.protobuf.MapField<String, list>
+      private com.google.protobuf.MapField<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
       internalGetMutableGroups() {
         onChanged();;
         if (groups_ == null) {
@@ -4300,33 +4300,33 @@ public final class MessageTemplate {
        */
 
       public boolean containsGroups(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         return internalGetGroups().getMap().containsKey(key);
       }
       /**
        * Use {@link #getGroupsMap()} instead.
        */
-      @Deprecated
-      public java.util.Map<String, list> getGroups() {
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> getGroups() {
         return getGroupsMap();
       }
       /**
        * <code>map&lt;string, .list&gt; groups = 2;</code>
        */
 
-      public java.util.Map<String, list> getGroupsMap() {
+      public java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> getGroupsMap() {
         return internalGetGroups().getMap();
       }
       /**
        * <code>map&lt;string, .list&gt; groups = 2;</code>
        */
 
-      public list getGroupsOrDefault(
-          String key,
-          list defaultValue) {
-        if (key == null) { throw new NullPointerException(); }
-        java.util.Map<String, list> map =
+      public com.im2.common.protobuf.MessageTemplate.list getGroupsOrDefault(
+          java.lang.String key,
+          com.im2.common.protobuf.MessageTemplate.list defaultValue) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> map =
             internalGetGroups().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
@@ -4334,13 +4334,13 @@ public final class MessageTemplate {
        * <code>map&lt;string, .list&gt; groups = 2;</code>
        */
 
-      public list getGroupsOrThrow(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
-        java.util.Map<String, list> map =
+      public com.im2.common.protobuf.MessageTemplate.list getGroupsOrThrow(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> map =
             internalGetGroups().getMap();
         if (!map.containsKey(key)) {
-          throw new IllegalArgumentException();
+          throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
@@ -4355,8 +4355,8 @@ public final class MessageTemplate {
        */
 
       public Builder removeGroups(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableGroups().getMutableMap()
             .remove(key);
         return this;
@@ -4364,8 +4364,8 @@ public final class MessageTemplate {
       /**
        * Use alternate mutation accessors instead.
        */
-      @Deprecated
-      public java.util.Map<String, list>
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list>
       getMutableGroups() {
         return internalGetMutableGroups().getMutableMap();
       }
@@ -4373,10 +4373,10 @@ public final class MessageTemplate {
        * <code>map&lt;string, .list&gt; groups = 2;</code>
        */
       public Builder putGroups(
-          String key,
-          list value) {
-        if (key == null) { throw new NullPointerException(); }
-        if (value == null) { throw new NullPointerException(); }
+          java.lang.String key,
+          com.im2.common.protobuf.MessageTemplate.list value) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (value == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableGroups().getMutableMap()
             .put(key, value);
         return this;
@@ -4386,18 +4386,18 @@ public final class MessageTemplate {
        */
 
       public Builder putAllGroups(
-          java.util.Map<String, list> values) {
+          java.util.Map<java.lang.String, com.im2.common.protobuf.MessageTemplate.list> values) {
         internalGetMutableGroups().getMutableMap()
             .putAll(values);
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -4408,18 +4408,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:MyGroup)
-    private static final MyGroup DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.MyGroup DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new MyGroup();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.MyGroup();
     }
 
-    public static MyGroup getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.MyGroup getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<MyGroup>
         PARSER = new com.google.protobuf.AbstractParser<MyGroup>() {
-      @Override
+      @java.lang.Override
       public MyGroup parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4432,13 +4432,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MyGroup> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public MyGroup getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.MyGroup getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4451,7 +4451,7 @@ public final class MessageTemplate {
     /**
      * <code>repeated string group = 1;</code>
      */
-    java.util.List<String>
+    java.util.List<java.lang.String>
         getGroupList();
     /**
      * <code>repeated string group = 1;</code>
@@ -4460,7 +4460,7 @@ public final class MessageTemplate {
     /**
      * <code>repeated string group = 1;</code>
      */
-    String getGroup(int index);
+    java.lang.String getGroup(int index);
     /**
      * <code>repeated string group = 1;</code>
      */
@@ -4483,7 +4483,7 @@ public final class MessageTemplate {
       group_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -4494,7 +4494,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -4508,7 +4508,7 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
                 group_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
@@ -4540,15 +4540,15 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_list_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_list_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_list_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_list_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              list.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.list.class, com.im2.common.protobuf.MessageTemplate.list.Builder.class);
     }
 
     public static final int GROUP_FIELD_NUMBER = 1;
@@ -4569,7 +4569,7 @@ public final class MessageTemplate {
     /**
      * <code>repeated string group = 1;</code>
      */
-    public String getGroup(int index) {
+    public java.lang.String getGroup(int index) {
       return group_.get(index);
     }
     /**
@@ -4581,7 +4581,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -4591,7 +4591,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < group_.size(); i++) {
@@ -4600,7 +4600,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -4619,15 +4619,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof list)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.list)) {
         return super.equals(obj);
       }
-      list other = (list) obj;
+      com.im2.common.protobuf.MessageTemplate.list other = (com.im2.common.protobuf.MessageTemplate.list) obj;
 
       boolean result = true;
       result = result && getGroupList()
@@ -4636,7 +4636,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -4652,69 +4652,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static list parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static list parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static list parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.list parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static list parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static list parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.list parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4722,23 +4722,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(list prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.list prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4748,18 +4748,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:list)
-        listOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.listOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_list_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_list_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_list_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_list_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                list.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.list.class, com.im2.common.protobuf.MessageTemplate.list.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.list.newBuilder()
@@ -4768,7 +4768,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4777,7 +4777,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         group_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -4785,29 +4785,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_list_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_list_descriptor;
       }
 
-      @Override
-      public list getDefaultInstanceForType() {
-        return list.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.list getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.list.getDefaultInstance();
       }
 
-      @Override
-      public list build() {
-        list result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.list build() {
+        com.im2.common.protobuf.MessageTemplate.list result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public list buildPartial() {
-        list result = new list(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.list buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.list result = new com.im2.common.protobuf.MessageTemplate.list(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           group_ = group_.getUnmodifiableView();
@@ -4818,50 +4818,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof list) {
-          return mergeFrom((list)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.list) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.list)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(list other) {
-        if (other == list.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.list other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.list.getDefaultInstance()) return this;
         if (!other.group_.isEmpty()) {
           if (group_.isEmpty()) {
             group_ = other.group_;
@@ -4877,21 +4877,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        list parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.list parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (list) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.list) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4925,7 +4925,7 @@ public final class MessageTemplate {
       /**
        * <code>repeated string group = 1;</code>
        */
-      public String getGroup(int index) {
+      public java.lang.String getGroup(int index) {
         return group_.get(index);
       }
       /**
@@ -4939,7 +4939,7 @@ public final class MessageTemplate {
        * <code>repeated string group = 1;</code>
        */
       public Builder setGroup(
-          int index, String value) {
+          int index, java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4952,7 +4952,7 @@ public final class MessageTemplate {
        * <code>repeated string group = 1;</code>
        */
       public Builder addGroup(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4965,7 +4965,7 @@ public final class MessageTemplate {
        * <code>repeated string group = 1;</code>
        */
       public Builder addAllGroup(
-          Iterable<String> values) {
+          java.lang.Iterable<java.lang.String> values) {
         ensureGroupIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, group_);
@@ -4995,13 +4995,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -5012,18 +5012,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:list)
-    private static final list DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.list DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new list();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.list();
     }
 
-    public static list getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.list getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<list>
         PARSER = new com.google.protobuf.AbstractParser<list>() {
-      @Override
+      @java.lang.Override
       public list parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5036,13 +5036,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<list> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public list getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.list getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5055,7 +5055,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -5065,7 +5065,7 @@ public final class MessageTemplate {
     /**
      * <code>string groupName = 2;</code>
      */
-    String getGroupName();
+    java.lang.String getGroupName();
     /**
      * <code>string groupName = 2;</code>
      */
@@ -5075,7 +5075,7 @@ public final class MessageTemplate {
     /**
      * <code>string membe = 3;</code>
      */
-    String getMembe();
+    java.lang.String getMembe();
     /**
      * <code>string membe = 3;</code>
      */
@@ -5104,7 +5104,7 @@ public final class MessageTemplate {
       membe_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -5115,7 +5115,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -5129,19 +5129,19 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               groupName_ = s;
               break;
             }
             case 26: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               membe_ = s;
               break;
@@ -5167,30 +5167,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Member_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Member_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Member_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Member_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Member.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Member.class, com.im2.common.protobuf.MessageTemplate.Member.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -5200,11 +5200,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -5213,18 +5213,18 @@ public final class MessageTemplate {
     }
 
     public static final int GROUPNAME_FIELD_NUMBER = 2;
-    private volatile Object groupName_;
+    private volatile java.lang.Object groupName_;
     /**
      * <code>string groupName = 2;</code>
      */
-    public String getGroupName() {
-      Object ref = groupName_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getGroupName() {
+      java.lang.Object ref = groupName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         groupName_ = s;
         return s;
       }
@@ -5234,11 +5234,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getGroupNameBytes() {
-      Object ref = groupName_;
-      if (ref instanceof String) {
+      java.lang.Object ref = groupName_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         groupName_ = b;
         return b;
       } else {
@@ -5247,18 +5247,18 @@ public final class MessageTemplate {
     }
 
     public static final int MEMBE_FIELD_NUMBER = 3;
-    private volatile Object membe_;
+    private volatile java.lang.Object membe_;
     /**
      * <code>string membe = 3;</code>
      */
-    public String getMembe() {
-      Object ref = membe_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getMembe() {
+      java.lang.Object ref = membe_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         membe_ = s;
         return s;
       }
@@ -5268,11 +5268,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getMembeBytes() {
-      Object ref = membe_;
-      if (ref instanceof String) {
+      java.lang.Object ref = membe_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         membe_ = b;
         return b;
       } else {
@@ -5281,7 +5281,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -5291,7 +5291,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -5306,7 +5306,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -5326,15 +5326,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Member)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Member)) {
         return super.equals(obj);
       }
-      Member other = (Member) obj;
+      com.im2.common.protobuf.MessageTemplate.Member other = (com.im2.common.protobuf.MessageTemplate.Member) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -5347,7 +5347,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -5365,69 +5365,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Member parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Member parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Member parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Member parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Member parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Member parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Member parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5435,23 +5435,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Member prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Member prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -5465,18 +5465,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Member)
-        MemberOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.MemberOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Member_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Member_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Member_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Member_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Member.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Member.class, com.im2.common.protobuf.MessageTemplate.Member.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Member.newBuilder()
@@ -5485,7 +5485,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5494,7 +5494,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -5506,29 +5506,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Member_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Member_descriptor;
       }
 
-      @Override
-      public Member getDefaultInstanceForType() {
-        return Member.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Member getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance();
       }
 
-      @Override
-      public Member build() {
-        Member result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Member build() {
+        com.im2.common.protobuf.MessageTemplate.Member result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Member buildPartial() {
-        Member result = new Member(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Member buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Member result = new com.im2.common.protobuf.MessageTemplate.Member(this);
         result.username_ = username_;
         result.groupName_ = groupName_;
         result.membe_ = membe_;
@@ -5536,50 +5536,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Member) {
-          return mergeFrom((Member)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Member) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Member)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Member other) {
-        if (other == Member.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Member other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Member.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -5597,21 +5597,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Member parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Member parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Member) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Member) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5621,20 +5621,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5642,11 +5642,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -5657,7 +5657,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5690,20 +5690,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object groupName_ = "";
+      private java.lang.Object groupName_ = "";
       /**
        * <code>string groupName = 2;</code>
        */
-      public String getGroupName() {
-        Object ref = groupName_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getGroupName() {
+        java.lang.Object ref = groupName_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           groupName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5711,11 +5711,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getGroupNameBytes() {
-        Object ref = groupName_;
+        java.lang.Object ref = groupName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           groupName_ = b;
           return b;
         } else {
@@ -5726,7 +5726,7 @@ public final class MessageTemplate {
        * <code>string groupName = 2;</code>
        */
       public Builder setGroupName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5759,20 +5759,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object membe_ = "";
+      private java.lang.Object membe_ = "";
       /**
        * <code>string membe = 3;</code>
        */
-      public String getMembe() {
-        Object ref = membe_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getMembe() {
+        java.lang.Object ref = membe_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           membe_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -5780,11 +5780,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getMembeBytes() {
-        Object ref = membe_;
+        java.lang.Object ref = membe_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           membe_ = b;
           return b;
         } else {
@@ -5795,7 +5795,7 @@ public final class MessageTemplate {
        * <code>string membe = 3;</code>
        */
       public Builder setMembe(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -5827,13 +5827,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -5844,18 +5844,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Member)
-    private static final Member DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Member DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Member();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Member();
     }
 
-    public static Member getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Member getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Member>
         PARSER = new com.google.protobuf.AbstractParser<Member>() {
-      @Override
+      @java.lang.Override
       public Member parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5868,13 +5868,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Member> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Member getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Member getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5887,7 +5887,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -5897,7 +5897,7 @@ public final class MessageTemplate {
     /**
      * <code>string groupName = 2;</code>
      */
-    String getGroupName();
+    java.lang.String getGroupName();
     /**
      * <code>string groupName = 2;</code>
      */
@@ -5925,7 +5925,7 @@ public final class MessageTemplate {
       groupName_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -5936,7 +5936,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -5950,13 +5950,13 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               groupName_ = s;
               break;
@@ -5982,30 +5982,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Group_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Group_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Group_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Group_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Group.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Group.class, com.im2.common.protobuf.MessageTemplate.Group.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -6015,11 +6015,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -6028,18 +6028,18 @@ public final class MessageTemplate {
     }
 
     public static final int GROUPNAME_FIELD_NUMBER = 2;
-    private volatile Object groupName_;
+    private volatile java.lang.Object groupName_;
     /**
      * <code>string groupName = 2;</code>
      */
-    public String getGroupName() {
-      Object ref = groupName_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getGroupName() {
+      java.lang.Object ref = groupName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         groupName_ = s;
         return s;
       }
@@ -6049,11 +6049,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getGroupNameBytes() {
-      Object ref = groupName_;
-      if (ref instanceof String) {
+      java.lang.Object ref = groupName_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         groupName_ = b;
         return b;
       } else {
@@ -6062,7 +6062,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -6072,7 +6072,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -6084,7 +6084,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -6101,15 +6101,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Group)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Group)) {
         return super.equals(obj);
       }
-      Group other = (Group) obj;
+      com.im2.common.protobuf.MessageTemplate.Group other = (com.im2.common.protobuf.MessageTemplate.Group) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -6120,7 +6120,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -6136,69 +6136,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Group parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Group parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Group parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Group parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Group parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Group parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Group parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6206,23 +6206,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Group prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Group prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -6236,18 +6236,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Group)
-        GroupOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.GroupOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Group_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Group_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Group_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Group_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Group.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Group.class, com.im2.common.protobuf.MessageTemplate.Group.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Group.newBuilder()
@@ -6256,7 +6256,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6265,7 +6265,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -6275,79 +6275,79 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Group_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Group_descriptor;
       }
 
-      @Override
-      public Group getDefaultInstanceForType() {
-        return Group.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Group getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance();
       }
 
-      @Override
-      public Group build() {
-        Group result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Group build() {
+        com.im2.common.protobuf.MessageTemplate.Group result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Group buildPartial() {
-        Group result = new Group(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Group buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Group result = new com.im2.common.protobuf.MessageTemplate.Group(this);
         result.username_ = username_;
         result.groupName_ = groupName_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Group) {
-          return mergeFrom((Group)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Group) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Group)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Group other) {
-        if (other == Group.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Group other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Group.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -6361,21 +6361,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Group parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Group parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Group) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Group) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -6385,20 +6385,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -6406,11 +6406,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -6421,7 +6421,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6454,20 +6454,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object groupName_ = "";
+      private java.lang.Object groupName_ = "";
       /**
        * <code>string groupName = 2;</code>
        */
-      public String getGroupName() {
-        Object ref = groupName_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getGroupName() {
+        java.lang.Object ref = groupName_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           groupName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -6475,11 +6475,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getGroupNameBytes() {
-        Object ref = groupName_;
+        java.lang.Object ref = groupName_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           groupName_ = b;
           return b;
         } else {
@@ -6490,7 +6490,7 @@ public final class MessageTemplate {
        * <code>string groupName = 2;</code>
        */
       public Builder setGroupName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -6522,13 +6522,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -6539,18 +6539,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Group)
-    private static final Group DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Group DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Group();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Group();
     }
 
-    public static Group getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Group getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Group>
         PARSER = new com.google.protobuf.AbstractParser<Group>() {
-      @Override
+      @java.lang.Override
       public Group parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -6563,13 +6563,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Group> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Group getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Group getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6582,7 +6582,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -6592,7 +6592,7 @@ public final class MessageTemplate {
     /**
      * <code>string password = 2;</code>
      */
-    String getPassword();
+    java.lang.String getPassword();
     /**
      * <code>string password = 2;</code>
      */
@@ -6602,7 +6602,7 @@ public final class MessageTemplate {
     /**
      * <code>string name = 3;</code>
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>string name = 3;</code>
      */
@@ -6612,7 +6612,7 @@ public final class MessageTemplate {
     /**
      * <code>string sex = 4;</code>
      */
-    String getSex();
+    java.lang.String getSex();
     /**
      * <code>string sex = 4;</code>
      */
@@ -6622,7 +6622,7 @@ public final class MessageTemplate {
     /**
      * <code>string age = 5;</code>
      */
-    String getAge();
+    java.lang.String getAge();
     /**
      * <code>string age = 5;</code>
      */
@@ -6632,7 +6632,7 @@ public final class MessageTemplate {
     /**
      * <code>string phone = 6;</code>
      */
-    String getPhone();
+    java.lang.String getPhone();
     /**
      * <code>string phone = 6;</code>
      */
@@ -6642,7 +6642,7 @@ public final class MessageTemplate {
     /**
      * <code>string address = 7;</code>
      */
-    String getAddress();
+    java.lang.String getAddress();
     /**
      * <code>string address = 7;</code>
      */
@@ -6652,7 +6652,7 @@ public final class MessageTemplate {
     /**
      * <code>string introduction = 8;</code>
      */
-    String getIntroduction();
+    java.lang.String getIntroduction();
     /**
      * <code>string introduction = 8;</code>
      */
@@ -6686,7 +6686,7 @@ public final class MessageTemplate {
       introduction_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -6697,7 +6697,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -6711,49 +6711,49 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               password_ = s;
               break;
             }
             case 26: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
             case 34: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               sex_ = s;
               break;
             }
             case 42: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               age_ = s;
               break;
             }
             case 50: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               phone_ = s;
               break;
             }
             case 58: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               address_ = s;
               break;
             }
             case 66: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               introduction_ = s;
               break;
@@ -6779,30 +6779,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Info_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Info_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Info_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Info_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Info.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Info.class, com.im2.common.protobuf.MessageTemplate.Info.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -6812,11 +6812,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -6825,18 +6825,18 @@ public final class MessageTemplate {
     }
 
     public static final int PASSWORD_FIELD_NUMBER = 2;
-    private volatile Object password_;
+    private volatile java.lang.Object password_;
     /**
      * <code>string password = 2;</code>
      */
-    public String getPassword() {
-      Object ref = password_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         password_ = s;
         return s;
       }
@@ -6846,11 +6846,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
-      Object ref = password_;
-      if (ref instanceof String) {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         password_ = b;
         return b;
       } else {
@@ -6859,18 +6859,18 @@ public final class MessageTemplate {
     }
 
     public static final int NAME_FIELD_NUMBER = 3;
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     /**
      * <code>string name = 3;</code>
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -6880,11 +6880,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -6893,18 +6893,18 @@ public final class MessageTemplate {
     }
 
     public static final int SEX_FIELD_NUMBER = 4;
-    private volatile Object sex_;
+    private volatile java.lang.Object sex_;
     /**
      * <code>string sex = 4;</code>
      */
-    public String getSex() {
-      Object ref = sex_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSex() {
+      java.lang.Object ref = sex_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         sex_ = s;
         return s;
       }
@@ -6914,11 +6914,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getSexBytes() {
-      Object ref = sex_;
-      if (ref instanceof String) {
+      java.lang.Object ref = sex_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         sex_ = b;
         return b;
       } else {
@@ -6927,18 +6927,18 @@ public final class MessageTemplate {
     }
 
     public static final int AGE_FIELD_NUMBER = 5;
-    private volatile Object age_;
+    private volatile java.lang.Object age_;
     /**
      * <code>string age = 5;</code>
      */
-    public String getAge() {
-      Object ref = age_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getAge() {
+      java.lang.Object ref = age_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         age_ = s;
         return s;
       }
@@ -6948,11 +6948,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getAgeBytes() {
-      Object ref = age_;
-      if (ref instanceof String) {
+      java.lang.Object ref = age_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         age_ = b;
         return b;
       } else {
@@ -6961,18 +6961,18 @@ public final class MessageTemplate {
     }
 
     public static final int PHONE_FIELD_NUMBER = 6;
-    private volatile Object phone_;
+    private volatile java.lang.Object phone_;
     /**
      * <code>string phone = 6;</code>
      */
-    public String getPhone() {
-      Object ref = phone_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPhone() {
+      java.lang.Object ref = phone_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         phone_ = s;
         return s;
       }
@@ -6982,11 +6982,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getPhoneBytes() {
-      Object ref = phone_;
-      if (ref instanceof String) {
+      java.lang.Object ref = phone_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         phone_ = b;
         return b;
       } else {
@@ -6995,18 +6995,18 @@ public final class MessageTemplate {
     }
 
     public static final int ADDRESS_FIELD_NUMBER = 7;
-    private volatile Object address_;
+    private volatile java.lang.Object address_;
     /**
      * <code>string address = 7;</code>
      */
-    public String getAddress() {
-      Object ref = address_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         address_ = s;
         return s;
       }
@@ -7016,11 +7016,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getAddressBytes() {
-      Object ref = address_;
-      if (ref instanceof String) {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         address_ = b;
         return b;
       } else {
@@ -7029,18 +7029,18 @@ public final class MessageTemplate {
     }
 
     public static final int INTRODUCTION_FIELD_NUMBER = 8;
-    private volatile Object introduction_;
+    private volatile java.lang.Object introduction_;
     /**
      * <code>string introduction = 8;</code>
      */
-    public String getIntroduction() {
-      Object ref = introduction_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getIntroduction() {
+      java.lang.Object ref = introduction_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         introduction_ = s;
         return s;
       }
@@ -7050,11 +7050,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getIntroductionBytes() {
-      Object ref = introduction_;
-      if (ref instanceof String) {
+      java.lang.Object ref = introduction_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         introduction_ = b;
         return b;
       } else {
@@ -7063,7 +7063,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -7073,7 +7073,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -7103,7 +7103,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -7138,15 +7138,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Info)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Info)) {
         return super.equals(obj);
       }
-      Info other = (Info) obj;
+      com.im2.common.protobuf.MessageTemplate.Info other = (com.im2.common.protobuf.MessageTemplate.Info) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -7169,7 +7169,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -7197,69 +7197,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Info parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Info parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Info parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Info parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Info parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Info parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Info parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7267,23 +7267,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Info prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Info prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -7297,18 +7297,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Info)
-        InfoOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.InfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Info_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Info_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Info_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Info_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Info.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Info.class, com.im2.common.protobuf.MessageTemplate.Info.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Info.newBuilder()
@@ -7317,7 +7317,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -7326,7 +7326,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -7348,29 +7348,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Info_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Info_descriptor;
       }
 
-      @Override
-      public Info getDefaultInstanceForType() {
-        return Info.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Info getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance();
       }
 
-      @Override
-      public Info build() {
-        Info result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Info build() {
+        com.im2.common.protobuf.MessageTemplate.Info result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Info buildPartial() {
-        Info result = new Info(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Info buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Info result = new com.im2.common.protobuf.MessageTemplate.Info(this);
         result.username_ = username_;
         result.password_ = password_;
         result.name_ = name_;
@@ -7383,50 +7383,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Info) {
-          return mergeFrom((Info)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Info) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Info)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Info other) {
-        if (other == Info.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Info other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Info.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -7464,21 +7464,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Info parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Info parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Info) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Info) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7488,20 +7488,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7509,11 +7509,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -7524,7 +7524,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7557,20 +7557,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object password_ = "";
+      private java.lang.Object password_ = "";
       /**
        * <code>string password = 2;</code>
        */
-      public String getPassword() {
-        Object ref = password_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           password_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7578,11 +7578,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
-        Object ref = password_;
+        java.lang.Object ref = password_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           password_ = b;
           return b;
         } else {
@@ -7593,7 +7593,7 @@ public final class MessageTemplate {
        * <code>string password = 2;</code>
        */
       public Builder setPassword(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7626,20 +7626,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>string name = 3;</code>
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7647,11 +7647,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -7662,7 +7662,7 @@ public final class MessageTemplate {
        * <code>string name = 3;</code>
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7695,20 +7695,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object sex_ = "";
+      private java.lang.Object sex_ = "";
       /**
        * <code>string sex = 4;</code>
        */
-      public String getSex() {
-        Object ref = sex_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getSex() {
+        java.lang.Object ref = sex_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           sex_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7716,11 +7716,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getSexBytes() {
-        Object ref = sex_;
+        java.lang.Object ref = sex_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           sex_ = b;
           return b;
         } else {
@@ -7731,7 +7731,7 @@ public final class MessageTemplate {
        * <code>string sex = 4;</code>
        */
       public Builder setSex(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7764,20 +7764,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object age_ = "";
+      private java.lang.Object age_ = "";
       /**
        * <code>string age = 5;</code>
        */
-      public String getAge() {
-        Object ref = age_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getAge() {
+        java.lang.Object ref = age_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           age_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7785,11 +7785,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getAgeBytes() {
-        Object ref = age_;
+        java.lang.Object ref = age_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           age_ = b;
           return b;
         } else {
@@ -7800,7 +7800,7 @@ public final class MessageTemplate {
        * <code>string age = 5;</code>
        */
       public Builder setAge(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7833,20 +7833,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object phone_ = "";
+      private java.lang.Object phone_ = "";
       /**
        * <code>string phone = 6;</code>
        */
-      public String getPhone() {
-        Object ref = phone_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPhone() {
+        java.lang.Object ref = phone_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           phone_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7854,11 +7854,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getPhoneBytes() {
-        Object ref = phone_;
+        java.lang.Object ref = phone_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           phone_ = b;
           return b;
         } else {
@@ -7869,7 +7869,7 @@ public final class MessageTemplate {
        * <code>string phone = 6;</code>
        */
       public Builder setPhone(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7902,20 +7902,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object address_ = "";
+      private java.lang.Object address_ = "";
       /**
        * <code>string address = 7;</code>
        */
-      public String getAddress() {
-        Object ref = address_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getAddress() {
+        java.lang.Object ref = address_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           address_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7923,11 +7923,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
-        Object ref = address_;
+        java.lang.Object ref = address_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           address_ = b;
           return b;
         } else {
@@ -7938,7 +7938,7 @@ public final class MessageTemplate {
        * <code>string address = 7;</code>
        */
       public Builder setAddress(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -7971,20 +7971,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object introduction_ = "";
+      private java.lang.Object introduction_ = "";
       /**
        * <code>string introduction = 8;</code>
        */
-      public String getIntroduction() {
-        Object ref = introduction_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getIntroduction() {
+        java.lang.Object ref = introduction_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           introduction_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -7992,11 +7992,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getIntroductionBytes() {
-        Object ref = introduction_;
+        java.lang.Object ref = introduction_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           introduction_ = b;
           return b;
         } else {
@@ -8007,7 +8007,7 @@ public final class MessageTemplate {
        * <code>string introduction = 8;</code>
        */
       public Builder setIntroduction(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8039,13 +8039,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -8056,18 +8056,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Info)
-    private static final Info DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Info DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Info();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Info();
     }
 
-    public static Info getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Info getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Info>
         PARSER = new com.google.protobuf.AbstractParser<Info>() {
-      @Override
+      @java.lang.Override
       public Info parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -8080,13 +8080,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Info> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Info getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Info getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8099,7 +8099,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -8122,12 +8122,12 @@ public final class MessageTemplate {
      * <code>map&lt;string, bool&gt; friends = 2;</code>
      */
     boolean containsFriends(
-            String key);
+        java.lang.String key);
     /**
      * Use {@link #getFriendsMap()} instead.
      */
-    @Deprecated
-    java.util.Map<String, Boolean>
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, java.lang.Boolean>
     getFriends();
     /**
      * <pre>
@@ -8136,7 +8136,7 @@ public final class MessageTemplate {
      *
      * <code>map&lt;string, bool&gt; friends = 2;</code>
      */
-    java.util.Map<String, Boolean>
+    java.util.Map<java.lang.String, java.lang.Boolean>
     getFriendsMap();
     /**
      * <pre>
@@ -8147,8 +8147,8 @@ public final class MessageTemplate {
      */
 
     boolean getFriendsOrDefault(
-            String key,
-            boolean defaultValue);
+        java.lang.String key,
+        boolean defaultValue);
     /**
      * <pre>
      * 名称 ,是否在线
@@ -8158,7 +8158,7 @@ public final class MessageTemplate {
      */
 
     boolean getFriendsOrThrow(
-            String key);
+        java.lang.String key);
   }
   /**
    * <pre>
@@ -8180,7 +8180,7 @@ public final class MessageTemplate {
       username_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -8191,7 +8191,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -8205,7 +8205,7 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
@@ -8216,7 +8216,7 @@ public final class MessageTemplate {
                     FriendsDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
-              com.google.protobuf.MapEntry<String, Boolean>
+              com.google.protobuf.MapEntry<java.lang.String, java.lang.Boolean>
               friends__ = input.readMessage(
                   FriendsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               friends_.getMutableMap().put(
@@ -8244,11 +8244,11 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_MyFriend_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
@@ -8259,28 +8259,28 @@ public final class MessageTemplate {
               "Invalid map field number: " + number);
       }
     }
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_MyFriend_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              MyFriend.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.MyFriend.class, com.im2.common.protobuf.MessageTemplate.MyFriend.Builder.class);
     }
 
     private int bitField0_;
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -8290,11 +8290,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -8305,18 +8305,18 @@ public final class MessageTemplate {
     public static final int FRIENDS_FIELD_NUMBER = 2;
     private static final class FriendsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          String, Boolean> defaultEntry =
+          java.lang.String, java.lang.Boolean> defaultEntry =
               com.google.protobuf.MapEntry
-              .<String, Boolean>newDefaultInstance(
-                  MessageTemplate.internal_static_MyFriend_FriendsEntry_descriptor,
+              .<java.lang.String, java.lang.Boolean>newDefaultInstance(
+                  com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_FriendsEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.BOOL,
                   false);
     }
     private com.google.protobuf.MapField<
-        String, Boolean> friends_;
-    private com.google.protobuf.MapField<String, Boolean>
+        java.lang.String, java.lang.Boolean> friends_;
+    private com.google.protobuf.MapField<java.lang.String, java.lang.Boolean>
     internalGetFriends() {
       if (friends_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -8337,15 +8337,15 @@ public final class MessageTemplate {
      */
 
     public boolean containsFriends(
-        String key) {
-      if (key == null) { throw new NullPointerException(); }
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       return internalGetFriends().getMap().containsKey(key);
     }
     /**
      * Use {@link #getFriendsMap()} instead.
      */
-    @Deprecated
-    public java.util.Map<String, Boolean> getFriends() {
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, java.lang.Boolean> getFriends() {
       return getFriendsMap();
     }
     /**
@@ -8356,7 +8356,7 @@ public final class MessageTemplate {
      * <code>map&lt;string, bool&gt; friends = 2;</code>
      */
 
-    public java.util.Map<String, Boolean> getFriendsMap() {
+    public java.util.Map<java.lang.String, java.lang.Boolean> getFriendsMap() {
       return internalGetFriends().getMap();
     }
     /**
@@ -8368,10 +8368,10 @@ public final class MessageTemplate {
      */
 
     public boolean getFriendsOrDefault(
-        String key,
+        java.lang.String key,
         boolean defaultValue) {
-      if (key == null) { throw new NullPointerException(); }
-      java.util.Map<String, Boolean> map =
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.Boolean> map =
           internalGetFriends().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
@@ -8384,18 +8384,18 @@ public final class MessageTemplate {
      */
 
     public boolean getFriendsOrThrow(
-        String key) {
-      if (key == null) { throw new NullPointerException(); }
-      java.util.Map<String, Boolean> map =
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.Boolean> map =
           internalGetFriends().getMap();
       if (!map.containsKey(key)) {
-        throw new IllegalArgumentException();
+        throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -8405,7 +8405,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -8420,7 +8420,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -8429,9 +8429,9 @@ public final class MessageTemplate {
       if (!getUsernameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, username_);
       }
-      for (java.util.Map.Entry<String, Boolean> entry
+      for (java.util.Map.Entry<java.lang.String, java.lang.Boolean> entry
            : internalGetFriends().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<String, Boolean>
+        com.google.protobuf.MapEntry<java.lang.String, java.lang.Boolean>
         friends__ = FriendsDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -8444,15 +8444,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof MyFriend)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.MyFriend)) {
         return super.equals(obj);
       }
-      MyFriend other = (MyFriend) obj;
+      com.im2.common.protobuf.MessageTemplate.MyFriend other = (com.im2.common.protobuf.MessageTemplate.MyFriend) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -8463,7 +8463,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -8481,69 +8481,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyFriend parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static MyFriend parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MyFriend parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static MyFriend parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static MyFriend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8551,23 +8551,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(MyFriend prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.MyFriend prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -8581,10 +8581,10 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:MyFriend)
-        MyFriendOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.MyFriendOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_MyFriend_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -8609,12 +8609,12 @@ public final class MessageTemplate {
                 "Invalid map field number: " + number);
         }
       }
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_MyFriend_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                MyFriend.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.MyFriend.class, com.im2.common.protobuf.MessageTemplate.MyFriend.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.MyFriend.newBuilder()
@@ -8623,7 +8623,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -8632,7 +8632,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -8641,29 +8641,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_MyFriend_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_MyFriend_descriptor;
       }
 
-      @Override
-      public MyFriend getDefaultInstanceForType() {
-        return MyFriend.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyFriend getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance();
       }
 
-      @Override
-      public MyFriend build() {
-        MyFriend result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyFriend build() {
+        com.im2.common.protobuf.MessageTemplate.MyFriend result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public MyFriend buildPartial() {
-        MyFriend result = new MyFriend(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.MyFriend buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.MyFriend result = new com.im2.common.protobuf.MessageTemplate.MyFriend(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.username_ = username_;
@@ -8674,50 +8674,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof MyFriend) {
-          return mergeFrom((MyFriend)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.MyFriend) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.MyFriend)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(MyFriend other) {
-        if (other == MyFriend.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.MyFriend other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.MyFriend.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -8729,21 +8729,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        MyFriend parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.MyFriend parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (MyFriend) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.MyFriend) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -8754,20 +8754,20 @@ public final class MessageTemplate {
       }
       private int bitField0_;
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -8775,11 +8775,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -8790,7 +8790,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -8824,8 +8824,8 @@ public final class MessageTemplate {
       }
 
       private com.google.protobuf.MapField<
-          String, Boolean> friends_;
-      private com.google.protobuf.MapField<String, Boolean>
+          java.lang.String, java.lang.Boolean> friends_;
+      private com.google.protobuf.MapField<java.lang.String, java.lang.Boolean>
       internalGetFriends() {
         if (friends_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -8833,7 +8833,7 @@ public final class MessageTemplate {
         }
         return friends_;
       }
-      private com.google.protobuf.MapField<String, Boolean>
+      private com.google.protobuf.MapField<java.lang.String, java.lang.Boolean>
       internalGetMutableFriends() {
         onChanged();;
         if (friends_ == null) {
@@ -8858,15 +8858,15 @@ public final class MessageTemplate {
        */
 
       public boolean containsFriends(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         return internalGetFriends().getMap().containsKey(key);
       }
       /**
        * Use {@link #getFriendsMap()} instead.
        */
-      @Deprecated
-      public java.util.Map<String, Boolean> getFriends() {
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, java.lang.Boolean> getFriends() {
         return getFriendsMap();
       }
       /**
@@ -8877,7 +8877,7 @@ public final class MessageTemplate {
        * <code>map&lt;string, bool&gt; friends = 2;</code>
        */
 
-      public java.util.Map<String, Boolean> getFriendsMap() {
+      public java.util.Map<java.lang.String, java.lang.Boolean> getFriendsMap() {
         return internalGetFriends().getMap();
       }
       /**
@@ -8889,10 +8889,10 @@ public final class MessageTemplate {
        */
 
       public boolean getFriendsOrDefault(
-          String key,
+          java.lang.String key,
           boolean defaultValue) {
-        if (key == null) { throw new NullPointerException(); }
-        java.util.Map<String, Boolean> map =
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, java.lang.Boolean> map =
             internalGetFriends().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
@@ -8905,12 +8905,12 @@ public final class MessageTemplate {
        */
 
       public boolean getFriendsOrThrow(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
-        java.util.Map<String, Boolean> map =
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, java.lang.Boolean> map =
             internalGetFriends().getMap();
         if (!map.containsKey(key)) {
-          throw new IllegalArgumentException();
+          throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
@@ -8929,8 +8929,8 @@ public final class MessageTemplate {
        */
 
       public Builder removeFriends(
-          String key) {
-        if (key == null) { throw new NullPointerException(); }
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         internalGetMutableFriends().getMutableMap()
             .remove(key);
         return this;
@@ -8938,8 +8938,8 @@ public final class MessageTemplate {
       /**
        * Use alternate mutation accessors instead.
        */
-      @Deprecated
-      public java.util.Map<String, Boolean>
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.String, java.lang.Boolean>
       getMutableFriends() {
         return internalGetMutableFriends().getMutableMap();
       }
@@ -8951,9 +8951,9 @@ public final class MessageTemplate {
        * <code>map&lt;string, bool&gt; friends = 2;</code>
        */
       public Builder putFriends(
-          String key,
+          java.lang.String key,
           boolean value) {
-        if (key == null) { throw new NullPointerException(); }
+        if (key == null) { throw new java.lang.NullPointerException(); }
         
         internalGetMutableFriends().getMutableMap()
             .put(key, value);
@@ -8968,18 +8968,18 @@ public final class MessageTemplate {
        */
 
       public Builder putAllFriends(
-          java.util.Map<String, Boolean> values) {
+          java.util.Map<java.lang.String, java.lang.Boolean> values) {
         internalGetMutableFriends().getMutableMap()
             .putAll(values);
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -8990,18 +8990,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:MyFriend)
-    private static final MyFriend DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.MyFriend DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new MyFriend();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.MyFriend();
     }
 
-    public static MyFriend getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.MyFriend getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<MyFriend>
         PARSER = new com.google.protobuf.AbstractParser<MyFriend>() {
-      @Override
+      @java.lang.Override
       public MyFriend parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -9014,13 +9014,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<MyFriend> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public MyFriend getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.MyFriend getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9033,7 +9033,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -9043,7 +9043,7 @@ public final class MessageTemplate {
     /**
      * <code>string friend = 2;</code>
      */
-    String getFriend();
+    java.lang.String getFriend();
     /**
      * <code>string friend = 2;</code>
      */
@@ -9071,7 +9071,7 @@ public final class MessageTemplate {
       friend_ = "";
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -9082,7 +9082,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -9096,13 +9096,13 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               friend_ = s;
               break;
@@ -9128,30 +9128,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Friend_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Friend_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Friend_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Friend_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Friend.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Friend.class, com.im2.common.protobuf.MessageTemplate.Friend.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -9161,11 +9161,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -9174,18 +9174,18 @@ public final class MessageTemplate {
     }
 
     public static final int FRIEND_FIELD_NUMBER = 2;
-    private volatile Object friend_;
+    private volatile java.lang.Object friend_;
     /**
      * <code>string friend = 2;</code>
      */
-    public String getFriend() {
-      Object ref = friend_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getFriend() {
+      java.lang.Object ref = friend_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         friend_ = s;
         return s;
       }
@@ -9195,11 +9195,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getFriendBytes() {
-      Object ref = friend_;
-      if (ref instanceof String) {
+      java.lang.Object ref = friend_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         friend_ = b;
         return b;
       } else {
@@ -9208,7 +9208,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -9218,7 +9218,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -9230,7 +9230,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -9247,15 +9247,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Friend)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Friend)) {
         return super.equals(obj);
       }
-      Friend other = (Friend) obj;
+      com.im2.common.protobuf.MessageTemplate.Friend other = (com.im2.common.protobuf.MessageTemplate.Friend) obj;
 
       boolean result = true;
       result = result && getUsername()
@@ -9266,7 +9266,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -9282,69 +9282,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Friend parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Friend parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Friend parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Friend parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Friend parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Friend parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -9352,23 +9352,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Friend prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Friend prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -9382,18 +9382,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Friend)
-        FriendOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.FriendOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Friend_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Friend_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Friend_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Friend_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Friend.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Friend.class, com.im2.common.protobuf.MessageTemplate.Friend.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Friend.newBuilder()
@@ -9402,7 +9402,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -9411,7 +9411,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
@@ -9421,79 +9421,79 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Friend_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Friend_descriptor;
       }
 
-      @Override
-      public Friend getDefaultInstanceForType() {
-        return Friend.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Friend getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance();
       }
 
-      @Override
-      public Friend build() {
-        Friend result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Friend build() {
+        com.im2.common.protobuf.MessageTemplate.Friend result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Friend buildPartial() {
-        Friend result = new Friend(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Friend buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Friend result = new com.im2.common.protobuf.MessageTemplate.Friend(this);
         result.username_ = username_;
         result.friend_ = friend_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Friend) {
-          return mergeFrom((Friend)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Friend) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Friend)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Friend other) {
-        if (other == Friend.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Friend other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Friend.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -9507,21 +9507,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Friend parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Friend parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Friend) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Friend) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -9531,20 +9531,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -9552,11 +9552,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -9567,7 +9567,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9600,20 +9600,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object friend_ = "";
+      private java.lang.Object friend_ = "";
       /**
        * <code>string friend = 2;</code>
        */
-      public String getFriend() {
-        Object ref = friend_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getFriend() {
+        java.lang.Object ref = friend_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           friend_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -9621,11 +9621,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getFriendBytes() {
-        Object ref = friend_;
+        java.lang.Object ref = friend_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           friend_ = b;
           return b;
         } else {
@@ -9636,7 +9636,7 @@ public final class MessageTemplate {
        * <code>string friend = 2;</code>
        */
       public Builder setFriend(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -9668,13 +9668,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -9685,18 +9685,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Friend)
-    private static final Friend DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Friend DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Friend();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Friend();
     }
 
-    public static Friend getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Friend getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Friend>
         PARSER = new com.google.protobuf.AbstractParser<Friend>() {
-      @Override
+      @java.lang.Override
       public Friend parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -9709,13 +9709,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Friend> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Friend getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Friend getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9728,7 +9728,7 @@ public final class MessageTemplate {
     /**
      * <code>string sender = 1;</code>
      */
-    String getSender();
+    java.lang.String getSender();
     /**
      * <code>string sender = 1;</code>
      */
@@ -9738,7 +9738,7 @@ public final class MessageTemplate {
     /**
      * <code>string receiver = 2;</code>
      */
-    String getReceiver();
+    java.lang.String getReceiver();
     /**
      * <code>string receiver = 2;</code>
      */
@@ -9748,7 +9748,7 @@ public final class MessageTemplate {
     /**
      * <code>string content = 3;</code>
      */
-    String getContent();
+    java.lang.String getContent();
     /**
      * <code>string content = 3;</code>
      */
@@ -9783,7 +9783,7 @@ public final class MessageTemplate {
       time_ = 0L;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -9794,7 +9794,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -9808,19 +9808,19 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               sender_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               receiver_ = s;
               break;
             }
             case 26: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               content_ = s;
               break;
@@ -9851,30 +9851,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_PreInfo_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_PreInfo_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_PreInfo_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_PreInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PreInfo.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.PreInfo.class, com.im2.common.protobuf.MessageTemplate.PreInfo.Builder.class);
     }
 
     public static final int SENDER_FIELD_NUMBER = 1;
-    private volatile Object sender_;
+    private volatile java.lang.Object sender_;
     /**
      * <code>string sender = 1;</code>
      */
-    public String getSender() {
-      Object ref = sender_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSender() {
+      java.lang.Object ref = sender_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         sender_ = s;
         return s;
       }
@@ -9884,11 +9884,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getSenderBytes() {
-      Object ref = sender_;
-      if (ref instanceof String) {
+      java.lang.Object ref = sender_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         sender_ = b;
         return b;
       } else {
@@ -9897,18 +9897,18 @@ public final class MessageTemplate {
     }
 
     public static final int RECEIVER_FIELD_NUMBER = 2;
-    private volatile Object receiver_;
+    private volatile java.lang.Object receiver_;
     /**
      * <code>string receiver = 2;</code>
      */
-    public String getReceiver() {
-      Object ref = receiver_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getReceiver() {
+      java.lang.Object ref = receiver_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         receiver_ = s;
         return s;
       }
@@ -9918,11 +9918,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getReceiverBytes() {
-      Object ref = receiver_;
-      if (ref instanceof String) {
+      java.lang.Object ref = receiver_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         receiver_ = b;
         return b;
       } else {
@@ -9931,18 +9931,18 @@ public final class MessageTemplate {
     }
 
     public static final int CONTENT_FIELD_NUMBER = 3;
-    private volatile Object content_;
+    private volatile java.lang.Object content_;
     /**
      * <code>string content = 3;</code>
      */
-    public String getContent() {
-      Object ref = content_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getContent() {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         content_ = s;
         return s;
       }
@@ -9952,11 +9952,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getContentBytes() {
-      Object ref = content_;
-      if (ref instanceof String) {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         content_ = b;
         return b;
       } else {
@@ -9974,7 +9974,7 @@ public final class MessageTemplate {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -9984,7 +9984,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getSenderBytes().isEmpty()) {
@@ -10002,7 +10002,7 @@ public final class MessageTemplate {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -10026,15 +10026,15 @@ public final class MessageTemplate {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof PreInfo)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.PreInfo)) {
         return super.equals(obj);
       }
-      PreInfo other = (PreInfo) obj;
+      com.im2.common.protobuf.MessageTemplate.PreInfo other = (com.im2.common.protobuf.MessageTemplate.PreInfo) obj;
 
       boolean result = true;
       result = result && getSender()
@@ -10049,7 +10049,7 @@ public final class MessageTemplate {
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -10070,69 +10070,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PreInfo parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static PreInfo parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static PreInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static PreInfo parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static PreInfo parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10140,23 +10140,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(PreInfo prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.PreInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -10170,18 +10170,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:PreInfo)
-        PreInfoOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.PreInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_PreInfo_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_PreInfo_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_PreInfo_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_PreInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                PreInfo.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.PreInfo.class, com.im2.common.protobuf.MessageTemplate.PreInfo.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.PreInfo.newBuilder()
@@ -10190,7 +10190,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -10199,7 +10199,7 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         sender_ = "";
@@ -10213,29 +10213,29 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_PreInfo_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_PreInfo_descriptor;
       }
 
-      @Override
-      public PreInfo getDefaultInstanceForType() {
-        return PreInfo.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.PreInfo getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance();
       }
 
-      @Override
-      public PreInfo build() {
-        PreInfo result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.PreInfo build() {
+        com.im2.common.protobuf.MessageTemplate.PreInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public PreInfo buildPartial() {
-        PreInfo result = new PreInfo(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.PreInfo buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.PreInfo result = new com.im2.common.protobuf.MessageTemplate.PreInfo(this);
         result.sender_ = sender_;
         result.receiver_ = receiver_;
         result.content_ = content_;
@@ -10244,50 +10244,50 @@ public final class MessageTemplate {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof PreInfo) {
-          return mergeFrom((PreInfo)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.PreInfo) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.PreInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(PreInfo other) {
-        if (other == PreInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.PreInfo other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.PreInfo.getDefaultInstance()) return this;
         if (!other.getSender().isEmpty()) {
           sender_ = other.sender_;
           onChanged();
@@ -10308,21 +10308,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        PreInfo parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.PreInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (PreInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.PreInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -10332,20 +10332,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object sender_ = "";
+      private java.lang.Object sender_ = "";
       /**
        * <code>string sender = 1;</code>
        */
-      public String getSender() {
-        Object ref = sender_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getSender() {
+        java.lang.Object ref = sender_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           sender_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10353,11 +10353,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getSenderBytes() {
-        Object ref = sender_;
+        java.lang.Object ref = sender_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           sender_ = b;
           return b;
         } else {
@@ -10368,7 +10368,7 @@ public final class MessageTemplate {
        * <code>string sender = 1;</code>
        */
       public Builder setSender(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10401,20 +10401,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object receiver_ = "";
+      private java.lang.Object receiver_ = "";
       /**
        * <code>string receiver = 2;</code>
        */
-      public String getReceiver() {
-        Object ref = receiver_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getReceiver() {
+        java.lang.Object ref = receiver_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           receiver_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10422,11 +10422,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getReceiverBytes() {
-        Object ref = receiver_;
+        java.lang.Object ref = receiver_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           receiver_ = b;
           return b;
         } else {
@@ -10437,7 +10437,7 @@ public final class MessageTemplate {
        * <code>string receiver = 2;</code>
        */
       public Builder setReceiver(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10470,20 +10470,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object content_ = "";
+      private java.lang.Object content_ = "";
       /**
        * <code>string content = 3;</code>
        */
-      public String getContent() {
-        Object ref = content_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getContent() {
+        java.lang.Object ref = content_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           content_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -10491,11 +10491,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getContentBytes() {
-        Object ref = content_;
+        java.lang.Object ref = content_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           content_ = b;
           return b;
         } else {
@@ -10506,7 +10506,7 @@ public final class MessageTemplate {
        * <code>string content = 3;</code>
        */
       public Builder setContent(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -10564,13 +10564,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -10581,18 +10581,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:PreInfo)
-    private static final PreInfo DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.PreInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new PreInfo();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.PreInfo();
     }
 
-    public static PreInfo getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.PreInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<PreInfo>
         PARSER = new com.google.protobuf.AbstractParser<PreInfo>() {
-      @Override
+      @java.lang.Override
       public PreInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -10605,13 +10605,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<PreInfo> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public PreInfo getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.PreInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -10624,7 +10624,7 @@ public final class MessageTemplate {
     /**
      * <code>string username = 1;</code>
      */
-    String getUsername();
+    java.lang.String getUsername();
     /**
      * <code>string username = 1;</code>
      */
@@ -10634,7 +10634,7 @@ public final class MessageTemplate {
     /**
      * <code>string password = 2;</code>
      */
-    String getPassword();
+    java.lang.String getPassword();
     /**
      * <code>string password = 2;</code>
      */
@@ -10642,7 +10642,17 @@ public final class MessageTemplate {
         getPasswordBytes();
 
     /**
-     * <code>int64 token = 3;</code>
+     * <code>string phone = 3;</code>
+     */
+    java.lang.String getPhone();
+    /**
+     * <code>string phone = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPhoneBytes();
+
+    /**
+     * <code>int64 token = 4;</code>
      */
     long getToken();
   }
@@ -10665,10 +10675,11 @@ public final class MessageTemplate {
     private Account() {
       username_ = "";
       password_ = "";
+      phone_ = "";
       token_ = 0L;
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -10679,7 +10690,7 @@ public final class MessageTemplate {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -10693,18 +10704,24 @@ public final class MessageTemplate {
               done = true;
               break;
             case 10: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               username_ = s;
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               password_ = s;
               break;
             }
-            case 24: {
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              phone_ = s;
+              break;
+            }
+            case 32: {
 
               token_ = input.readInt64();
               break;
@@ -10730,30 +10747,30 @@ public final class MessageTemplate {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return MessageTemplate.internal_static_Account_descriptor;
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Account_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return MessageTemplate.internal_static_Account_fieldAccessorTable
+      return com.im2.common.protobuf.MessageTemplate.internal_static_Account_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Account.class, Builder.class);
+              com.im2.common.protobuf.MessageTemplate.Account.class, com.im2.common.protobuf.MessageTemplate.Account.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
-    private volatile Object username_;
+    private volatile java.lang.Object username_;
     /**
      * <code>string username = 1;</code>
      */
-    public String getUsername() {
-      Object ref = username_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         username_ = s;
         return s;
       }
@@ -10763,11 +10780,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
-      Object ref = username_;
-      if (ref instanceof String) {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         username_ = b;
         return b;
       } else {
@@ -10776,18 +10793,18 @@ public final class MessageTemplate {
     }
 
     public static final int PASSWORD_FIELD_NUMBER = 2;
-    private volatile Object password_;
+    private volatile java.lang.Object password_;
     /**
      * <code>string password = 2;</code>
      */
-    public String getPassword() {
-      Object ref = password_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         password_ = s;
         return s;
       }
@@ -10797,11 +10814,11 @@ public final class MessageTemplate {
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
-      Object ref = password_;
-      if (ref instanceof String) {
+      java.lang.Object ref = password_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         password_ = b;
         return b;
       } else {
@@ -10809,17 +10826,51 @@ public final class MessageTemplate {
       }
     }
 
-    public static final int TOKEN_FIELD_NUMBER = 3;
+    public static final int PHONE_FIELD_NUMBER = 3;
+    private volatile java.lang.Object phone_;
+    /**
+     * <code>string phone = 3;</code>
+     */
+    public java.lang.String getPhone() {
+      java.lang.Object ref = phone_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        phone_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string phone = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPhoneBytes() {
+      java.lang.Object ref = phone_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        phone_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TOKEN_FIELD_NUMBER = 4;
     private long token_;
     /**
-     * <code>int64 token = 3;</code>
+     * <code>int64 token = 4;</code>
      */
     public long getToken() {
       return token_;
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -10829,7 +10880,7 @@ public final class MessageTemplate {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!getUsernameBytes().isEmpty()) {
@@ -10838,13 +10889,16 @@ public final class MessageTemplate {
       if (!getPasswordBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, password_);
       }
+      if (!getPhoneBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phone_);
+      }
       if (token_ != 0L) {
-        output.writeInt64(3, token_);
+        output.writeInt64(4, token_);
       }
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -10856,37 +10910,42 @@ public final class MessageTemplate {
       if (!getPasswordBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, password_);
       }
+      if (!getPhoneBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phone_);
+      }
       if (token_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, token_);
+          .computeInt64Size(4, token_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Account)) {
+      if (!(obj instanceof com.im2.common.protobuf.MessageTemplate.Account)) {
         return super.equals(obj);
       }
-      Account other = (Account) obj;
+      com.im2.common.protobuf.MessageTemplate.Account other = (com.im2.common.protobuf.MessageTemplate.Account) obj;
 
       boolean result = true;
       result = result && getUsername()
           .equals(other.getUsername());
       result = result && getPassword()
           .equals(other.getPassword());
+      result = result && getPhone()
+          .equals(other.getPhone());
       result = result && (getToken()
           == other.getToken());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -10897,6 +10956,8 @@ public final class MessageTemplate {
       hash = (53 * hash) + getUsername().hashCode();
       hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
       hash = (53 * hash) + getPassword().hashCode();
+      hash = (37 * hash) + PHONE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhone().hashCode();
       hash = (37 * hash) + TOKEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getToken());
@@ -10905,69 +10966,69 @@ public final class MessageTemplate {
       return hash;
     }
 
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Account parseFrom(byte[] data)
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Account parseFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Account parseDelimitedFrom(java.io.InputStream input)
+    public static com.im2.common.protobuf.MessageTemplate.Account parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Account parseDelimitedFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Account parseFrom(
+    public static com.im2.common.protobuf.MessageTemplate.Account parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10975,23 +11036,23 @@ public final class MessageTemplate {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Account prototype) {
+    public static Builder newBuilder(com.im2.common.protobuf.MessageTemplate.Account prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -11005,18 +11066,18 @@ public final class MessageTemplate {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Account)
-        AccountOrBuilder {
+        com.im2.common.protobuf.MessageTemplate.AccountOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return MessageTemplate.internal_static_Account_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Account_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return MessageTemplate.internal_static_Account_fieldAccessorTable
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Account_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Account.class, Builder.class);
+                com.im2.common.protobuf.MessageTemplate.Account.class, com.im2.common.protobuf.MessageTemplate.Account.Builder.class);
       }
 
       // Construct using com.im2.common.protobuf.MessageTemplate.Account.newBuilder()
@@ -11025,7 +11086,7 @@ public final class MessageTemplate {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -11034,98 +11095,105 @@ public final class MessageTemplate {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         username_ = "";
 
         password_ = "";
 
+        phone_ = "";
+
         token_ = 0L;
 
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return MessageTemplate.internal_static_Account_descriptor;
+        return com.im2.common.protobuf.MessageTemplate.internal_static_Account_descriptor;
       }
 
-      @Override
-      public Account getDefaultInstanceForType() {
-        return Account.getDefaultInstance();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Account getDefaultInstanceForType() {
+        return com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance();
       }
 
-      @Override
-      public Account build() {
-        Account result = buildPartial();
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Account build() {
+        com.im2.common.protobuf.MessageTemplate.Account result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Account buildPartial() {
-        Account result = new Account(this);
+      @java.lang.Override
+      public com.im2.common.protobuf.MessageTemplate.Account buildPartial() {
+        com.im2.common.protobuf.MessageTemplate.Account result = new com.im2.common.protobuf.MessageTemplate.Account(this);
         result.username_ = username_;
         result.password_ = password_;
+        result.phone_ = phone_;
         result.token_ = token_;
         onBuilt();
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return (Builder) super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Account) {
-          return mergeFrom((Account)other);
+        if (other instanceof com.im2.common.protobuf.MessageTemplate.Account) {
+          return mergeFrom((com.im2.common.protobuf.MessageTemplate.Account)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Account other) {
-        if (other == Account.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.im2.common.protobuf.MessageTemplate.Account other) {
+        if (other == com.im2.common.protobuf.MessageTemplate.Account.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
         }
         if (!other.getPassword().isEmpty()) {
           password_ = other.password_;
+          onChanged();
+        }
+        if (!other.getPhone().isEmpty()) {
+          phone_ = other.phone_;
           onChanged();
         }
         if (other.getToken() != 0L) {
@@ -11136,21 +11204,21 @@ public final class MessageTemplate {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Account parsedMessage = null;
+        com.im2.common.protobuf.MessageTemplate.Account parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Account) e.getUnfinishedMessage();
+          parsedMessage = (com.im2.common.protobuf.MessageTemplate.Account) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -11160,20 +11228,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object username_ = "";
+      private java.lang.Object username_ = "";
       /**
        * <code>string username = 1;</code>
        */
-      public String getUsername() {
-        Object ref = username_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           username_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -11181,11 +11249,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getUsernameBytes() {
-        Object ref = username_;
+        java.lang.Object ref = username_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           username_ = b;
           return b;
         } else {
@@ -11196,7 +11264,7 @@ public final class MessageTemplate {
        * <code>string username = 1;</code>
        */
       public Builder setUsername(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -11229,20 +11297,20 @@ public final class MessageTemplate {
         return this;
       }
 
-      private Object password_ = "";
+      private java.lang.Object password_ = "";
       /**
        * <code>string password = 2;</code>
        */
-      public String getPassword() {
-        Object ref = password_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getPassword() {
+        java.lang.Object ref = password_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           password_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -11250,11 +11318,11 @@ public final class MessageTemplate {
        */
       public com.google.protobuf.ByteString
           getPasswordBytes() {
-        Object ref = password_;
+        java.lang.Object ref = password_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           password_ = b;
           return b;
         } else {
@@ -11265,7 +11333,7 @@ public final class MessageTemplate {
        * <code>string password = 2;</code>
        */
       public Builder setPassword(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -11298,15 +11366,84 @@ public final class MessageTemplate {
         return this;
       }
 
+      private java.lang.Object phone_ = "";
+      /**
+       * <code>string phone = 3;</code>
+       */
+      public java.lang.String getPhone() {
+        java.lang.Object ref = phone_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          phone_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string phone = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPhoneBytes() {
+        java.lang.Object ref = phone_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          phone_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string phone = 3;</code>
+       */
+      public Builder setPhone(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        phone_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string phone = 3;</code>
+       */
+      public Builder clearPhone() {
+        
+        phone_ = getDefaultInstance().getPhone();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string phone = 3;</code>
+       */
+      public Builder setPhoneBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        phone_ = value;
+        onChanged();
+        return this;
+      }
+
       private long token_ ;
       /**
-       * <code>int64 token = 3;</code>
+       * <code>int64 token = 4;</code>
        */
       public long getToken() {
         return token_;
       }
       /**
-       * <code>int64 token = 3;</code>
+       * <code>int64 token = 4;</code>
        */
       public Builder setToken(long value) {
         
@@ -11315,7 +11452,7 @@ public final class MessageTemplate {
         return this;
       }
       /**
-       * <code>int64 token = 3;</code>
+       * <code>int64 token = 4;</code>
        */
       public Builder clearToken() {
         
@@ -11323,13 +11460,13 @@ public final class MessageTemplate {
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFieldsProto3(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -11340,18 +11477,18 @@ public final class MessageTemplate {
     }
 
     // @@protoc_insertion_point(class_scope:Account)
-    private static final Account DEFAULT_INSTANCE;
+    private static final com.im2.common.protobuf.MessageTemplate.Account DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Account();
+      DEFAULT_INSTANCE = new com.im2.common.protobuf.MessageTemplate.Account();
     }
 
-    public static Account getDefaultInstance() {
+    public static com.im2.common.protobuf.MessageTemplate.Account getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Account>
         PARSER = new com.google.protobuf.AbstractParser<Account>() {
-      @Override
+      @java.lang.Override
       public Account parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11364,13 +11501,13 @@ public final class MessageTemplate {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Account> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Account getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.im2.common.protobuf.MessageTemplate.Account getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -11444,7 +11581,7 @@ public final class MessageTemplate {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\tMsg.proto\"\334\002\n\007Message\022\020\n\010userSign\030\016 \001(" +
       "\t\022\032\n\004sign\030\001 \001(\0162\014.MessageSign\022\031\n\004type\030\002 " +
       "\001(\0162\013.ActionType\022\027\n\006status\030\003 \001(\0162\007.Statu" +
@@ -11469,22 +11606,22 @@ public final class MessageTemplate {
       "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\010:\0028\001\"*\n\006Frie" +
       "nd\022\020\n\010username\030\001 \001(\t\022\016\n\006friend\030\002 \001(\t\"J\n\007" +
       "PreInfo\022\016\n\006sender\030\001 \001(\t\022\020\n\010receiver\030\002 \001(" +
-      "\t\022\017\n\007content\030\003 \001(\t\022\014\n\004time\030\004 \001(\003\"<\n\007Acco" +
+      "\t\022\017\n\007content\030\003 \001(\t\022\014\n\004time\030\004 \001(\003\"K\n\007Acco" +
       "unt\022\020\n\010username\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\022" +
-      "\r\n\005token\030\003 \001(\003*4\n\013MessageSign\022\013\n\007REQUEST" +
-      "\020\000\022\014\n\010RESPONSE\020\001\022\n\n\006NOTICE\020\002*\303\002\n\nActionT" +
-      "ype\022\t\n\005LOGIN\020\000\022\014\n\010REGISTER\020\001\022\n\n\006LOGOUT\020\002" +
-      "\022\n\n\006RECONN\020\003\022\022\n\016PERSON_MESSAGE\020\004\022\021\n\rGROU" +
-      "P_MESSAGE\020\005\022\020\n\014CREATE_GROUP\020\006\022\021\n\rDISBAND" +
-      "_GROUP\020\007\022\016\n\nADD_MEMBER\020\010\022\021\n\rREMOVE_MEMBE" +
-      "R\020\t\022\016\n\nADD_FRIEND\020\n\022\021\n\rREMOVE_FRIEND\020\013\022\016" +
-      "\n\nALL_FRIEND\020\014\022\024\n\020UPDATE_SELF_INFO\020\r\022\022\n\016" +
-      "LOOK_SELF_INFO\020\016\022\024\n\020LOOK_FRIEND_INFO\020\017\022\023" +
-      "\n\017LOOK_GROUP_INFO\020\020\022\r\n\tHEARTBEAT\020\021*K\n\006St" +
-      "atus\022\013\n\007SUCCESS\020\000\022\021\n\rREQUEST_ERROR\020\001\022\017\n\013" +
-      "SERVER_BUSY\020\002\022\020\n\014SERVER_ERROR\020\003B*\n\027com.i" +
-      "m2.common.protobufB\017MessageTemplateb\006pro" +
-      "to3"
+      "\r\n\005phone\030\003 \001(\t\022\r\n\005token\030\004 \001(\003*4\n\013Message" +
+      "Sign\022\013\n\007REQUEST\020\000\022\014\n\010RESPONSE\020\001\022\n\n\006NOTIC" +
+      "E\020\002*\303\002\n\nActionType\022\t\n\005LOGIN\020\000\022\014\n\010REGISTE" +
+      "R\020\001\022\n\n\006LOGOUT\020\002\022\n\n\006RECONN\020\003\022\022\n\016PERSON_ME" +
+      "SSAGE\020\004\022\021\n\rGROUP_MESSAGE\020\005\022\020\n\014CREATE_GRO" +
+      "UP\020\006\022\021\n\rDISBAND_GROUP\020\007\022\016\n\nADD_MEMBER\020\010\022" +
+      "\021\n\rREMOVE_MEMBER\020\t\022\016\n\nADD_FRIEND\020\n\022\021\n\rRE" +
+      "MOVE_FRIEND\020\013\022\016\n\nALL_FRIEND\020\014\022\024\n\020UPDATE_" +
+      "SELF_INFO\020\r\022\022\n\016LOOK_SELF_INFO\020\016\022\024\n\020LOOK_" +
+      "FRIEND_INFO\020\017\022\023\n\017LOOK_GROUP_INFO\020\020\022\r\n\tHE" +
+      "ARTBEAT\020\021*K\n\006Status\022\013\n\007SUCCESS\020\000\022\021\n\rREQU" +
+      "EST_ERROR\020\001\022\017\n\013SERVER_BUSY\020\002\022\020\n\014SERVER_E" +
+      "RROR\020\003B*\n\027com.im2.common.protobufB\017Messa" +
+      "geTemplateb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -11503,73 +11640,73 @@ public final class MessageTemplate {
     internal_static_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Message_descriptor,
-        new String[] { "UserSign", "Sign", "Type", "Status", "Token", "Login", "Member", "Group", "Info", "MyFriend", "Friend", "PreInfo", "Account", "Body", });
+        new java.lang.String[] { "UserSign", "Sign", "Type", "Status", "Token", "Login", "Member", "Group", "Info", "MyFriend", "Friend", "PreInfo", "Account", "Body", });
     internal_static_MyGroup_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_MyGroup_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MyGroup_descriptor,
-        new String[] { "Username", "Groups", });
+        new java.lang.String[] { "Username", "Groups", });
     internal_static_MyGroup_GroupsEntry_descriptor =
       internal_static_MyGroup_descriptor.getNestedTypes().get(0);
     internal_static_MyGroup_GroupsEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MyGroup_GroupsEntry_descriptor,
-        new String[] { "Key", "Value", });
+        new java.lang.String[] { "Key", "Value", });
     internal_static_list_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_list_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_list_descriptor,
-        new String[] { "Group", });
+        new java.lang.String[] { "Group", });
     internal_static_Member_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_Member_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Member_descriptor,
-        new String[] { "Username", "GroupName", "Membe", });
+        new java.lang.String[] { "Username", "GroupName", "Membe", });
     internal_static_Group_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_Group_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Group_descriptor,
-        new String[] { "Username", "GroupName", });
+        new java.lang.String[] { "Username", "GroupName", });
     internal_static_Info_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_Info_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Info_descriptor,
-        new String[] { "Username", "Password", "Name", "Sex", "Age", "Phone", "Address", "Introduction", });
+        new java.lang.String[] { "Username", "Password", "Name", "Sex", "Age", "Phone", "Address", "Introduction", });
     internal_static_MyFriend_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_MyFriend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MyFriend_descriptor,
-        new String[] { "Username", "Friends", });
+        new java.lang.String[] { "Username", "Friends", });
     internal_static_MyFriend_FriendsEntry_descriptor =
       internal_static_MyFriend_descriptor.getNestedTypes().get(0);
     internal_static_MyFriend_FriendsEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MyFriend_FriendsEntry_descriptor,
-        new String[] { "Key", "Value", });
+        new java.lang.String[] { "Key", "Value", });
     internal_static_Friend_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_Friend_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Friend_descriptor,
-        new String[] { "Username", "Friend", });
+        new java.lang.String[] { "Username", "Friend", });
     internal_static_PreInfo_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_PreInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PreInfo_descriptor,
-        new String[] { "Sender", "Receiver", "Content", "Time", });
+        new java.lang.String[] { "Sender", "Receiver", "Content", "Time", });
     internal_static_Account_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_Account_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Account_descriptor,
-        new String[] { "Username", "Password", "Token", });
+        new java.lang.String[] { "Username", "Password", "Phone", "Token", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

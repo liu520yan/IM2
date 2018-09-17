@@ -18,6 +18,6 @@ public class ExceptionAdvice {
     @ExceptionHandler(value = BaseException.class)
     @ResponseBody
     public ResponseEntity<BaseMessage> handleMethodArgumentTypeMismatchException(BaseException e) {
-        return new ResponseEntity<>(new BaseMessage(e), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(new BaseMessage(e), HttpStatus.OK);
     }
 }
