@@ -15,4 +15,4 @@ mob:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.0.103:1001/eureka/
+      defaultZone: http://47.106.116.106:1001/eureka/
