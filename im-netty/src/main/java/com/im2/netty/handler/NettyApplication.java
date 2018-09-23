@@ -1,6 +1,7 @@
 package com.im2.netty.handler;
 
 import com.im2.netty.handler.netty.NettyServer;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -10,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * Created by liuyan on 2017/12/7.
  */
+@MapperScan(basePackages = "com.im2.netty.handler.mapper.*")
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "com.im2.common.feignClient")
