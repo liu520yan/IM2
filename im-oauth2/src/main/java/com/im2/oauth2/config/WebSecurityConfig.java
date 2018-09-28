@@ -2,6 +2,7 @@ package com.im2.oauth2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -26,14 +27,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
-                .antMatchers("/health", "/img/*","/customized/*").permitAll()
+                .antMatchers("/health", "/img/*").permitAll()
                 .and()
                 .requestMatchers()
-                .antMatchers("/customized/*","/health", "/img/*", "/login", "/oauth/authorize", "/oauth/confirm_access", "oauth/revoke-token")
+                .antMatchers("/health", "/img/*", "/login", "/oauth/authorize", "/oauth/confirm_access", "oauth/revoke-token")
                 .antMatchers(HttpMethod.OPTIONS)
                 .and()
                 .authorizeRequests().anyRequest().authenticated()
                 .and()
                 .csrf().disable(); // 1
+    }
+
+    @Bean
+    ReloadableResourceBundleMessageSource getMess() {
+        ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
+        source.setBasename("classpath:messages");
+        return source;
     }
 }

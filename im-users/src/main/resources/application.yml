@@ -6,6 +6,8 @@ spring:
    url: jdbc:mysql://47.106.116.106:3306/im_user?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
    username: root
    password: 123456
+  profiles:
+    active: dev
 server:
   port: 9010
 mob:

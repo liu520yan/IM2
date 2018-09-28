@@ -19,8 +19,6 @@ public class UserDetail implements UserDetailsService {
 
     @Autowired
     private UserFeign userFeign;
-    @Autowired
-    private Oauth2Feign oauth2Feign;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

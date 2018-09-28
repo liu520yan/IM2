@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import static com.im2.common.protobuf.MessageTemplate.ActionType.LOGIN;
 import static com.im2.common.protobuf.MessageTemplate.ActionType.PERSON_MESSAGE;
@@ -41,7 +42,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     /**
      * 空闲次数
      */
-    private Map<Channel, Integer> idle_count = new HashMap<>();
+    private Map<Channel, Integer> idle_count = new ConcurrentHashMap<>();
 
     /**
      * 建立连接时，发送一条消息
@@ -63,7 +64,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
             IdleStateEvent event = (IdleStateEvent) obj;
             if (IdleState.READER_IDLE.equals(event.state())) { // 如果读通道处于空闲状态，说明没有接收到心跳命令
                 log.warn("已经10秒没有接收到客户端的信息了 channel: {}", ctx.channel().toString());
-                if (idle_count.get(ctx.channel()) > 2) {
+                if (idle_count.get(ctx.channel()) != null && idle_count.get(ctx.channel()) > 2) {
                     log.warn("关闭这个不活跃的channel channel: {}", ctx.channel().toString());
                     ctx.channel().close();
                     idle_count.remove(ctx.channel());
